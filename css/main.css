@@ -49,6 +49,7 @@ nav ul {
 nav ul li:hover {
   background-color: #555555;
   cursor: pointer;
+  flex-wrap: nowrap;
 }
 nav ul > li {
   display: flex;
@@ -145,6 +146,24 @@ ul li a {
 .titles-block h1:last-child {
   max-width: 600px;
 }
+@media screen and (max-width: 600px) {
+  .titles-block h1 {
+    font-size: 36px;
+    margin: 80px 0px;
+  }
+  .titles-block h1:first-child {
+    max-width: 270px;
+  }
+  .titles-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 340px;
+  }
+  header {
+    display: none;
+  }
+}
 
 /* Second Block */
 .how-it-works {
@@ -186,7 +205,21 @@ ul li a {
 .contact-us h4 {
   font-size: 48px;
 }
-
+@media screen and (max-width: 600px) {
+  .how-it-works h2 {
+    font-size: 24px;
+  }
+  .how-it-works-item h4 {
+    font-size: 18px;
+  }
+  .how-it-works-item p {
+    font-size: 16px;
+  }
+  .how-it-works-item div {
+    width: 216px;
+    height: 216px;
+  }
+}
 /* Three Block */
 .select-spec {
   width: 100%;
@@ -205,6 +238,20 @@ ul li a {
   color: white;
   max-width: 630px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .select-spec section p {
+    font-size: 36px;
+    margin: 20px;
+  }
+  .select-spec section p:first-child {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  .select-spec section p:last-child {
+    text-align: right;
+  }
 }
 
 /* Four Block */
@@ -227,6 +274,25 @@ ul li a {
 .contact-us div a {
   margin: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  .contact-us {
+    min-height: 286px;
+  }
+  .contact-us p {
+    font-size: 18px;
+    margin: 10px;
+  }
+  .contact-us h4 {
+    font-size: 24px;
+    margin: 50px 0px 10px 0px;
+  }
+  .contact-us div a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* Footer */
 footer {
   width: 100%;
@@ -282,7 +348,6 @@ footer section:first-child {
   padding: 0px;
   margin-top: 30px;
 }
-
 footer section:last-child {
   font-size: 24px;
   line-height: 28px;
@@ -290,4 +355,37 @@ footer section:last-child {
   color: white;
   outline: none;
   margin: 50px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    min-height: 390px;
+    padding: 0px 20px;
+    align-items: flex-start;
+  }
+  footer section:last-child {
+    font-size: 14px;
+    margin: 30px 0px;
+  }
+  footer section:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 196px;
+  }
+  .footer-contacts div:first-child {
+    display: none;
+  }
+  .footer-contacts div:nth-child(2) {
+    margin: 15px 0px;
+  }
+  .footer-menu ul {
+    font-size: 16px;
+    height: 130px;
+    margin: 0px 0px 5px 0px;
+  }
+  .footer-contacts button {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+  }
 }
