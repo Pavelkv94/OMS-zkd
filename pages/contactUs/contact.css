@@ -1,6 +1,6 @@
 @font-face {
   font-family: "ZzzFont";
-  src: url("../assets/fonts/Zzz.ttf"), url("../assets/fonts/Zzz.otf");
+  src: url("../../assets/fonts/Zzz.ttf"), url("../../assets/fonts/Zzz.otf");
 }
 body {
   margin: 0;
@@ -12,30 +12,11 @@ body {
   flex-direction: column;
   position: relative;
 }
-
-/* First Block */
-.zakodix {
-  background-color: #222222;
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 640px) {
+  header:first-child {
+    display: none;
+  }
 }
-.titles-block {
-  font-family: "ZzzFont";
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 125%;
-  font-style: normal;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-}
-.titles-block h1,
-.how-it-works h2,
-.select-spec section p,
 .contact-us h4 {
   font-family: "ZzzFont";
   font-weight: 500;
@@ -45,163 +26,86 @@ body {
 
   text-align: center;
 }
-.titles-block h1 {
-  color: white;
-  margin: 50px;
-}
-.titles-block h1:first-child {
-  max-width: 400px;
-}
-.titles-block h1:last-child {
-  max-width: 600px;
-}
-@media screen and (max-width: 640px) {
-  .titles-block h1 {
-    font-size: 36px;
-    margin: 80px 0px;
-  }
-  .titles-block h1:first-child {
-    max-width: 270px;
-  }
-  .titles-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 340px;
-  }
-  header:first-child {
-    display: none;
-  }
-}
-
-/* Second Block */
-.how-it-works {
-  width: 100%;
-  min-height: 840px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 30px;
-}
-.how-it-works section {
-  display: flex;
-  flex-wrap: wrap;
-}
-.how-it-works-item {
-  display: flex;
-  flex-direction: column;
-  width: 278px;
-  margin: 10px;
-}
-.how-it-works-item div {
-  width: 278px;
-  height: 278px;
-  background-color: #222222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.how-it-works-item h4 {
-  font-size: 36px;
-  font-weight: 500;
-  margin: 20px 0px 10px 0px;
-}
-.how-it-works-item p {
-  font-size: 24px;
-  margin-top: 0px;
-}
-.how-it-works h2,
 .contact-us h4 {
   font-size: 48px;
-}
-@media screen and (max-width: 640px) {
-  .how-it-works h2 {
-    font-size: 24px;
-  }
-  .how-it-works-item h4 {
-    font-size: 18px;
-  }
-  .how-it-works-item p {
-    font-size: 16px;
-  }
-  .how-it-works-item div {
-    width: 216px;
-    height: 216px;
-  }
-}
-/* Three Block */
-.select-spec {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #222222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.select-spec section {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.select-spec section p {
-  color: white;
-  max-width: 630px;
-  margin-top: 10px;
-}
-
-@media screen and (max-width: 640px) {
-  .select-spec section p {
-    font-size: 36px;
-    margin: 20px;
-  }
-  .select-spec section p:first-child {
-    text-align: left;
-    margin-bottom: 60px;
-  }
-  .select-spec section p:last-child {
-    text-align: right;
-  }
 }
 
 /* Four Block */
 .contact-us {
   width: 100%;
-  min-height: 500px;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
-.contact-us p {
+.contact-us section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.contact-us section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 240px;
+  max-width: 575px;
+}
+.contact-us section div:nth-child(2) {
+  justify-content: space-around;
+}
+.contact-us section div p {
   font-size: 36px;
-  margin: 20px;
+  margin: 0px 0px 15px 0px;
 }
 .contact-us h4 {
-  margin: 30px;
+  margin: 50px;
 }
-.contact-us div,
+.contact-us section div div,
 .contact-us div a {
   margin: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
 }
-.contact-us div a:hover {
+.contact-us section div a:hover {
   opacity: 0.7;
 }
 
 @media screen and (max-width: 640px) {
   .contact-us {
-    min-height: 286px;
+    min-height: 422px;
+    padding-top: 68px;
   }
-  .contact-us p {
+  .contact-us section {
+    min-width: 374px;
+    margin: 0px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-us section div p {
     font-size: 18px;
-    margin: 10px;
+    margin: 0px 0px 10px 0px;
   }
   .contact-us h4 {
     font-size: 24px;
-    margin: 50px 0px 10px 0px;
+    margin: 24px;
   }
   .contact-us div a img {
     width: 40px;
     height: 40px;
+  }
+  .contact-us section div {
+    height: 102px;
+  }
+  .contact-us section div:nth-child(2) {
+    margin-top: 30px;
+  }
+  .contact-us section div:nth-child(2) p {
+    margin: 10px;
   }
 }
 
