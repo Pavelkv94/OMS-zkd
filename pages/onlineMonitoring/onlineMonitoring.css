@@ -1,0 +1,288 @@
+@font-face {
+    font-family: "ZzzFont";
+    src: url("../../assets/fonts/Zzz.otf"), url("../../assets/fonts/Zzz.otf");
+  }
+  body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* First Block */
+  .zakodix {
+    background-color: #222222;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titles-block {
+    font-family: "ZzzFont";
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 125%;
+    font-style: normal;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+  .titles-block h1,
+  .about-us h2 {
+    font-family: "ZzzFont";
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 125%;
+    font-style: normal;
+  
+    text-align: center;
+  }
+  .titles-block h1 {
+    color: white;
+    margin: 50px;
+  }
+  .titles-block h1:first-child {
+    max-width: 400px;
+  }
+  .titles-block h1:last-child {
+    max-width: 600px;
+  }
+  @media screen and (max-width: 640px) {
+    .titles-block h1 {
+      font-size: 36px;
+      margin: 80px 0px;
+    }
+    .titles-block h1:first-child {
+      max-width: 270px;
+    }
+    .titles-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 340px;
+    }
+    header:first-child {
+      display: none;
+    }
+  }
+  
+  /* Second Block */
+  .about-us {
+    width: 100%;
+    min-height: 840px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px 70px 0px;
+  }
+  
+  .about-us h2 {
+    font-size: 48px;
+  }
+  .about-us p {
+    font-size: 36px;
+    margin: 50px 0px;
+  }
+  .fake-img {
+    width: 575px;
+    height: 378px;
+    background-color: gray;
+  }
+  .about-us .contact-btn button {
+    background: #222222;
+    color: white;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  .about-us section:nth-child(3) {
+    display: flex;
+  }
+  .about-us section:nth-child(3) div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about-us section:nth-child(3) div .contact-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .about-us section:nth-child(3) div p {
+    margin: 15px 0px;
+  }
+  @media screen and (min-width: 640px) {
+    .about-us section {
+      width: 76%;
+    }
+    .about-us section:nth-child(3) div {
+      min-width: 575px;
+    }
+    .about-us section:nth-child(3) .contact-btn-mobile {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .about-us h2 {
+      font-size: 24px;
+    }
+    .about-us p {
+      font-size: 18px;
+    }
+    .about-us section {
+      padding: 0px 20px;
+    }
+    .fake-img {
+      width: 375px;
+      height: 358px;
+    }
+    .about-us section:nth-child(3) div .contact-btn {
+      display: none;
+    }
+    .about-us section:nth-child(3) {
+      flex-wrap: wrap;
+    }
+    .about-us section:nth-child(3) .contact-btn-mobile {
+      width: 100%;
+      align-items: center;
+    }
+    .about-us section:nth-child(3) .contact-btn-mobile button {
+      background: #222222;
+      color: white;
+    }
+  }
+  
+  /* Footer */
+  footer {
+    /* width: 100%; */
+    min-height: 460px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer section {
+    width: 80%;
+  }
+  footer section:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    max-height: 240px;
+    justify-content: space-between;
+  }
+  .footer-contacts div:first-child img {
+    float: right;
+  }
+  .footer-contacts div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-contacts div:nth-child(2) a:hover {
+    opacity: 0.7;
+  }
+  .footer-contacts button,
+  .about-us button {
+    width: 228px;
+    height: 65px;
+    font-size: 24px;
+    line-height: 125.6%;
+    border-radius: 21px;
+    border: none;
+  }
+  .footer-contacts button {
+    background: #f0f0f0;
+  }
+  .footer-contacts button:hover,
+  .about-us button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-menu ul {
+    list-style: none;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 24px;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  footer section:last-child {
+    font-size: 24px;
+    line-height: 28px;
+    opacity: 0.6;
+    color: white;
+    outline: none;
+    margin: 50px 0px;
+  }
+  
+  @media screen and (max-width: 640px) {
+    footer {
+      min-height: 390px;
+      padding: 0px 20px;
+      align-items: flex-start;
+    }
+    footer section:last-child {
+      font-size: 14px;
+      margin: 30px 0px;
+    }
+    footer section:first-child {
+      display: flex;
+      flex-direction: column;
+      min-width: 100%;
+    }
+    .footer-contacts {
+      width: 196px;
+    }
+    .footer-contacts div:first-child {
+      display: none;
+    }
+    .footer-contacts div:nth-child(2) {
+      margin: 15px 0px;
+    }
+    .footer-menu {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .footer-menu ul {
+      font-size: 16px;
+      height: 130px;
+      margin: 0px 0px 5px 0px;
+    }
+    .footer-contacts button {
+      width: 150px;
+      height: 50px;
+      font-size: 18px;
+    }
+    .footer-logo {
+      display: flex;
+      width: 102px;
+      height: 46px;
+      color: white;
+      font-size: 12px;
+    }
+    .footer-logo p {
+      margin: 0px;
+    }
+  }
+  
