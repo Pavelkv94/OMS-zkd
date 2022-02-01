@@ -1,7 +1,7 @@
 @font-face {
   font-family: "ZzzFont";
-  src: url("assets/fonts/Zzz.woff"), url("assets/fonts/Zzz.ttf"),
-    url("assets/fonts/Zzz.otf");
+  src: url("./assets/fonts/Zzz.woff"), url("./assets/fonts/Zzz.ttf"),
+    url("./assets/fonts/Zzz.otf");
 }
 /* First Block */
 .zakodix {
