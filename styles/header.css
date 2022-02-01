@@ -165,6 +165,9 @@ header:nth-child(2) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(-45deg);
   }
+  header:first-child {
+    display: none;
+  }
 }
 /* Меню, которое будет появляться */
 .menu {
@@ -209,4 +212,8 @@ header:nth-child(2) {
 .first-sub-item li,
 .second-sub-item li {
   display: none;
+}
+.current {
+  padding: 2px;
+  border-bottom: 2px solid white;
 }
