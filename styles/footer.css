@@ -65,6 +65,9 @@ footer {
     padding: 0px;
     margin-top: 30px;
   }
+  .footer-menu ul li a:hover {
+    text-decoration: underline;
+  }
   footer section:last-child {
     font-size: 24px;
     line-height: 28px;

@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: "ZzzFont";
   src: url("../assets/fonts/Zzz.ttf"), url("../assets/fonts/Zzz.otf");
-}
+} */
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
