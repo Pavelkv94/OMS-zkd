@@ -1,18 +1,7 @@
 @font-face {
   font-family: "ZzzFont";
-  src: url("../../assets/fonts/Zzz.otf"), url("../../assets/fonts/Zzz.otf");
+  src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"), url("../../assets/fonts/Zzz.otf");
 }
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-.main-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
 /* First Block */
 .devops-main {
   background-color: #222222;
