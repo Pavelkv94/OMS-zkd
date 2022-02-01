@@ -50,7 +50,7 @@ body {
     margin: 80px 0px;
   }
   .title h1:first-child {
-    max-width: 270px;
+    max-width: 320px;
   }
   .title {
     display: flex;
@@ -91,15 +91,11 @@ body {
   width: 100%;
 }
 .processes p {
-  margin: 10px;
+  margin: 10px 0px;
   max-width: 277px;
 }
-.processes div {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-.processes div div {
+
+.processes div div:first-child {
   width: 277px;
   height: 277px;
   background: #222222;
@@ -111,7 +107,7 @@ body {
   width: 130px;
   height: 130px;
 }
-.processes div p:nth-child(3) {
+.processes div div:nth-child(2) p:nth-child(2) {
   font-size: 24px;
 }
 .radial div {
@@ -121,14 +117,43 @@ body {
   text-align: center;
 }
 @media screen and (max-width: 640px) {
-  .devops-descript h2 {
-    font-size: 24px;
-  }
-  .devops-descript p {
-    font-size: 18px;
+  .devops-descript {
+    padding: 20px 0px 0px 0px;
   }
   .devops-descript section {
-    padding: 0px 20px;
+    width: 100%;
+  }
+  .devops-descript h2 {
+    font-size: 24px;
+    margin: 30px;
+  }
+  .devops-descript p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .processes div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0px;
+   }
+  .processes p {
+    margin: 0px 0px 10px 0px;
+  }
+  .processes div div:first-child {
+    width: 216px;
+    height: 216px;
+  }
+  .processes div div:nth-child(2) {
+    width: 138px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center
+  }
+  .processes div div:nth-child(2) p:nth-child(2) {
+    font-size: 16px;
   }
 }
 
@@ -137,6 +162,11 @@ body {
   min-height: 686px;
   width: 100%;
   background: #222222;
+}
+@media screen and (max-width: 640px) {
+  .animate-tech-background {
+    height: 100vh;
+  }
 }
 
 /* Contact Us */
