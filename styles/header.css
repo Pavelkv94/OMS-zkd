@@ -23,13 +23,15 @@ header:first-child {
   align-items: center;
   flex-wrap: wrap;
 }
+.logo-wrapper {
+  margin-left: 130px;
+}
 header:first-child div.logo {
   display: flex;
   width: 102px;
   height: 46px;
   justify-content: center;
   align-items: center;
-  margin-left: 130px;
 }
 header:first-child div.logo p {
   color: white;
