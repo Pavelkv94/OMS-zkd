@@ -12,6 +12,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -2;
+}
+#zakodixnet_canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
 }
 .titles-block {
   font-family: "ZzzFont";
