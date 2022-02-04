@@ -3,6 +3,9 @@
   src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"),
     url("../../assets/fonts/Zzz.otf");
 }
+header:first-child {
+  background: #222222;
+}
 /* First Block */
 .online-monitor-page {
   background-color: white;
