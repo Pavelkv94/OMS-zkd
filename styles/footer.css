@@ -114,6 +114,7 @@ footer section:last-child {
     width: 150px;
     height: 50px;
     font-size: 18px;
+    color: black;
   }
   .footer-logo {
     display: flex;

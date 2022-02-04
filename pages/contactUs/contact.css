@@ -20,6 +20,7 @@ header:first-child {
 
 /* Four Block */
 .contact-us {
+  background: white;
   width: 100%;
   min-height: 550px;
   display: flex;

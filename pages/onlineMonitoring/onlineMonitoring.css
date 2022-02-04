@@ -99,6 +99,7 @@ header:first-child {
 
 /* Second Block */
 .online-monitor-descript {
+  background: white;
   width: 100%;
   min-height: 840px;
   display: flex;
@@ -157,7 +158,8 @@ header:first-child {
 .online-monitor-descript section:nth-child(3) p {
   max-width: 672px;
 }
-.fake-img-three, .fake-img-mobile {
+.fake-img-three,
+.fake-img-mobile {
   width: 476px;
   height: 450px;
   background-color: gray;
@@ -166,7 +168,7 @@ header:first-child {
 @media screen and (min-width: 640px) {
   .fake-img-mobile {
     display: none;
-  } 
+  }
 }
 @media screen and (max-width: 640px) {
   .online-monitor-descript {
@@ -179,7 +181,7 @@ header:first-child {
   .online-monitor-descript p {
     font-size: 18px;
   }
-   .online-monitor-descript section:nth-child(2) {
+  .online-monitor-descript section:nth-child(2) {
     width: 100%;
     justify-content: center;
   }

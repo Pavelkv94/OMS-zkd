@@ -51,6 +51,7 @@
 
 /* Second Block */
 .devops-descript {
+  background: white;
   width: 100%;
   min-height: 840px;
   display: flex;
@@ -160,6 +161,7 @@
 
 /* Contact Us */
 .contact-us {
+  background: white;
   width: 100%;
   min-height: 500px;
   display: flex;
