@@ -82,6 +82,9 @@ footer section:last-child {
     padding: 0px 20px;
     align-items: flex-start;
   }
+  footer section {
+    width: 100%;
+  }
   footer section:last-child {
     font-size: 14px;
     margin: 30px 0px;
