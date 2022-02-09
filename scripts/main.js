@@ -14,3 +14,18 @@ selectTwo.addEventListener('mouseover', function(){
     selectOne.classList.remove('active');
 })
 
+// Slider
+let sliderSection = document.getElementById('how-section');
+
+if(window.innerWidth > 640) {
+    sliderSection.classList.add('desktop')
+} else sliderSection.classList.add('slider')
+
+$('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true
+  });
