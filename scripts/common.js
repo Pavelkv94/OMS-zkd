@@ -21,4 +21,25 @@ subMenu2.addEventListener('click', function(){
     subItem2.classList.toggle('active');
 });
 
+//Go Up
 
+document.addEventListener('DOMContentLoaded', () => {
+
+    let toTopBtn = document.querySelector('.to-up');
+
+    window.onscroll = function () {
+        if (window.pageYOffset > 580 && window.innerWidth > 640) {
+            toTopBtn.style.display = 'block'
+        } else {
+            toTopBtn.style.display = 'none'
+        }
+    }
+
+    // плавный скролл наверх 
+    toTopBtn.addEventListener('click', function () {
+        window.scrollBy({
+            top: -document.documentElement.scrollHeight,
+            behavior: 'smooth'
+        });
+    });
+});

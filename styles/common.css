@@ -9,3 +9,13 @@ body {
   flex-direction: column;
   position: relative;
 }
+
+.to-up {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  display: none;
+  z-index: 22;
+  cursor: pointer;
+}
+
