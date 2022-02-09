@@ -118,6 +118,9 @@
 .how-it-works {
   align-items: center;
 }
+.how-it-works section.slider {
+  display: none;
+}
 }
 
 @media screen and (max-width: 640px) {
@@ -143,6 +146,9 @@
   }
   .slider p {
     width: 216px;
+  }
+  .how-it-works section.desktop {
+    display: none;
   }
 
 }

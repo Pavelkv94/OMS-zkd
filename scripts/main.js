@@ -15,15 +15,16 @@ selectTwo.addEventListener('mouseover', function(){
 })
 
 // Slider
-let sliderSection = document.getElementById('how-section');
+// let sliderSection = document.getElementById('how-section');
 
-if(window.innerWidth > 640) {
-    sliderSection.classList.add('desktop')
-} else sliderSection.classList.add('slider')
+// if(window.innerWidth > 640) {
+//     sliderSection.classList.add('desktop')
+// } else sliderSection.classList.add('slider')
 
 $('.slider').slick({
     dots: true,
     arrows: false,
+    autoplay: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,

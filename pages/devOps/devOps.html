@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../styles/common.css" type="text/css" />
     <link rel="stylesheet" href="../../styles/header.css" type="text/css" />
     <link rel="stylesheet" href="../../styles/footer.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css" />
     <link rel="stylesheet" href="./devOps.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,9 +76,9 @@
           <span></span>
         </div>
       </header>
-                  
-      <a class="to-up"><img src="../../assets/img/buttons/button up.svg"/></a>
-      
+
+      <a class="to-up"><img src="../../assets/img/buttons/button up.svg" /></a>
+
       <div class="menu">
         <ul>
           <li class="first-submenu-mobile">
@@ -116,7 +118,7 @@
       <div class="devops-descript">
         <section>
           <h2>DevOps Process</h2>
-          <div class="processes">
+          <div class="processes all">
             <div>
               <div>
                 <img
@@ -143,7 +145,10 @@
             </div>
             <div>
               <div>
-                <img src="../../assets/img/svg/Development.svg" alt="Development" />
+                <img
+                  src="../../assets/img/svg/Development.svg"
+                  alt="Development"
+                />
               </div>
               <div>
                 <p>Development</p>
@@ -152,7 +157,10 @@
             </div>
             <div>
               <div>
-                <img src="../../assets/img/svg/Deployment.svg" alt="Deployment" />
+                <img
+                  src="../../assets/img/svg/Deployment.svg"
+                  alt="Deployment"
+                />
               </div>
               <div>
                 <p>Deployment</p>
@@ -163,7 +171,38 @@
         </section>
         <section>
           <h2>DevOps Team</h2>
-          <div class="processes">
+
+          <div class="processes desktop">
+            <div class="radial">
+              <div>
+                <img
+                  src="../../assets/img/svg/Solution Architect.svg"
+                  alt="Solution Architect"
+                />
+              </div>
+              <p>Solution Architect</p>
+            </div>
+            <div class="radial">
+              <div>
+                <img
+                  src="../../assets/img/svg/DevOps Engineer.svg"
+                  alt="DevOps Engineer"
+                />
+              </div>
+              <p>DevOps Engineer</p>
+            </div>
+            <div class="radial">
+              <div>
+                <img
+                  src="../../assets/img/svg/Business Analyst.svg"
+                  alt="Business Analyst"
+                />
+              </div>
+              <p>Business Analyst</p>
+            </div>
+          </div>
+
+          <div class="processes slider">
             <div class="radial">
               <div>
                 <img
@@ -235,15 +274,21 @@
           <div class="footer-contacts">
             <div><img src="../../assets/img/svg/logo 2.svg" alt="logo2" /></div>
             <div>
-              <a href=""><img src="../../assets/img/svg/mail.svg" alt="Mail" /></a>
               <a href=""
-                ><img src="../../assets/img/svg/linkedinWhite.svg" alt="linkedIn"
+                ><img src="../../assets/img/svg/mail.svg" alt="Mail"
+              /></a>
+              <a href=""
+                ><img
+                  src="../../assets/img/svg/linkedinWhite.svg"
+                  alt="linkedIn"
               /></a>
               <a href=""
                 ><img src="../../assets/img/svg/phone.svg" alt="Phone"
               /></a>
               <a href=""
-                ><img src="../../assets/img/svg/telegramWhite.svg" alt="telegram"
+                ><img
+                  src="../../assets/img/svg/telegramWhite.svg"
+                  alt="telegram"
               /></a>
             </div>
             <a href="../contactUs/contact.html"><button>Contact us</button></a>
@@ -255,8 +300,15 @@
       </footer>
     </div>
 
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- Particles -->
     <script type="text/javascript" src="../../scripts/particles.js"></script>
+    <!-- Slider -->
+    <script type="text/javascript" src="../../slick/slick.min.js"></script>
+
     <script type="text/javascript" src="../../scripts/common.js"></script>
+    <script type="text/javascript" src="../../scripts/devops.js"></script>
 
   </body>
 </html>
