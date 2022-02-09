@@ -24,6 +24,7 @@ selectTwo.addEventListener('mouseover', function(){
 $('.slider').slick({
     dots: true,
     arrows: false,
+    autoplay: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
