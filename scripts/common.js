@@ -26,12 +26,19 @@ subMenu2.addEventListener('click', function(){
 document.addEventListener('DOMContentLoaded', () => {
 
     let toTopBtn = document.querySelector('.to-up');
+    let toTopBtnMobile = document.querySelector('.to-up-mobile');
 
     window.onscroll = function () {
         if (window.pageYOffset > 580 && window.innerWidth > 640) {
             toTopBtn.style.display = 'block'
         } else {
             toTopBtn.style.display = 'none'
+        }
+
+        if (window.pageYOffset > 200 && window.innerWidth < 640) {
+            toTopBtnMobile.style.display = 'block'
+        } else {
+            toTopBtnMobile.style.display = 'none'
         }
     }
 
@@ -42,21 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
             behavior: 'smooth'
         });
     });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
-
-    let toTopBtnMobile = document.querySelector('.to-up-mobile');
-
-    window.onscroll = function () {
-        if (window.pageYOffset > 200 && window.innerWidth < 640) {
-            toTopBtnMobile.style.display = 'block'
-        } else {
-            toTopBtnMobile.style.display = 'none'
-        }
-    }
-
-    // плавный скролл наверх 
+    
     toTopBtnMobile.addEventListener('click', function () {
         window.scrollBy({
             top: -document.documentElement.scrollHeight,
@@ -64,3 +58,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
