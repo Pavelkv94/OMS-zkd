@@ -1,3 +1,3 @@
 # zkd
-# zkd gh
+# zkd
 https://pavelkv94.github.io/zkd/

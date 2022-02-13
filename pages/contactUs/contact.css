@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "ZzzFont";
+  src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"), url("../../assets/fonts/Zzz.otf");
+}
+header:first-child {
+  background: #222222;
+}
+.submenu {
+  background: #222222;
+}
+.topmenu > li:hover .submenu {
+  background: #222222;
+}
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+  background-color: #181818;
+  cursor: pointer;
+}
+.topmenu > li:hover .submenu li {
+  background-color: #181818;
+}
+.topmenu > li:hover .submenu li:hover {
+  background-color: #555555;
+}
+@media screen and (max-width: 640px) {
+  header:nth-child(2) {
+    background-color: #414141;}
+}
+.menu {
+  background: #414141;
+}
+/* First Block */
+.contact-us h4 {
+  font-family: "ZzzFont";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 125%;
+  font-style: normal;
+  text-align: center;
+}
+.contact-us h4 {
+  font-size: 48px;
+}
+
+/* Four Block */
+.contact-us {
+  background: white;
+  width: 100%;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-us section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.contact-us section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 240px;
+  max-width: 575px;
+}
+.contact-us section div:nth-child(2) {
+  justify-content: space-around;
+}
+.contact-us section div p {
+  font-size: 36px;
+  margin: 0px 0px 15px 0px;
+}
+.contact-us h4 {
+  margin: 50px;
+}
+.contact-us section div div,
+.contact-us div a {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+}
+.contact-us section div a:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 640px) {
+  .contact-us {
+    min-height: 422px;
+    padding-top: 68px;
+  }
+  .contact-us section {
+    min-width: 374px;
+    margin: 0px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-us section div p {
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+  }
+  .contact-us h4 {
+    font-size: 24px;
+    margin: 24px;
+  }
+  .contact-us div a img {
+    width: 40px;
+    height: 40px;
+  }
+  .contact-us section div {
+    height: 102px;
+  }
+  .contact-us section div:nth-child(2) {
+    margin-top: 30px;
+  }
+  .contact-us section div:nth-child(2) p {
+    margin: 10px;
+  }
+}
