@@ -6,6 +6,31 @@
 header:first-child {
   background: #222222;
 }
+.submenu {
+  background: #222222;
+}
+.topmenu > li:hover .submenu {
+  background: #222222;
+}
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+  background-color: #181818;
+  cursor: pointer;
+}
+.topmenu > li:hover .submenu li {
+  background-color: #181818;
+}
+.topmenu > li:hover .submenu li:hover {
+  background-color: #555555;
+}
+@media screen and (max-width: 640px) {
+  header:nth-child(2) {
+    background-color: #414141;}
+}
+.menu {
+  background: #414141;
+}
 /* First Block */
 .online-monitor-page {
   background-color: white;

@@ -150,7 +150,16 @@
   .how-it-works section.desktop {
     display: none;
   }
-
+  .slick-dots {
+    font-size: 5px;
+  }
+  .slick-dots li {
+    margin: 0px;
+  }
+  .slick-dots li.slick-active button:before {
+    font-size: 10px;
+    top: 1px;
+  }
 }
 
 /* Three Block */

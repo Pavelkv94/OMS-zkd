@@ -48,7 +48,8 @@ nav ul {
   display: flex;
 }
 nav ul li:hover {
-  background-color: #555555;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
   cursor: pointer;
   flex-wrap: nowrap;
 }
@@ -63,11 +64,12 @@ nav ul > li {
 }
 
 .submenu-link:hover {
-  background-color: #555555;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
   cursor: pointer;
 }
 .submenu {
-  background: #273037;
+  /* background: red; */
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -85,14 +87,17 @@ nav ul > li {
 .topmenu > li:hover .submenu {
   opacity: 1;
   transform: scaleY(1);
-  background-color: #181818;
+  /* background: red; */
+  backdrop-filter: blur(4px);
   cursor: pointer;
 }
 .topmenu > li:hover .submenu li {
-  background-color: #181818;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
 }
 .topmenu > li:hover .submenu li:hover {
-  background-color: #555555;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
 }
 .topmenu > li .submenu a,
 ul li a,
@@ -121,8 +126,9 @@ header:nth-child(2) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #414141;
-    position: fixed;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+    position: absolute;
     z-index: 2;
     width: 100vw;
   }
@@ -174,13 +180,14 @@ header:nth-child(2) {
 }
 /* Меню, которое будет появляться */
 .menu {
-  position: fixed;
-  top: 68px;
+  position: absolute;
+  top: 70px;
   left: 0;
   z-index: 1;
   min-width: 100%;
-  background: #414141;
-  transform: translateY(-100%);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  transform: translateY(-140%);
   transition: transform 0.5s;
   font-size: 16px;
 }
