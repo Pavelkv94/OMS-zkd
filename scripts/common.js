@@ -26,13 +26,16 @@ subMenu2.addEventListener('click', function(){
 document.addEventListener('DOMContentLoaded', () => {
 
     let toTopBtn = document.querySelector('.to-up');
+    let toMenuBtn = document.querySelector('.to-menu');
     let toTopBtnMobile = document.querySelector('.to-up-mobile');
 
     window.onscroll = function () {
         if (window.pageYOffset > 580 && window.innerWidth > 640) {
             toTopBtn.style.display = 'block'
+            toMenuBtn.style.display = 'block'
         } else {
             toTopBtn.style.display = 'none'
+            toMenuBtn.style.display = 'none'
         }
 
         if (window.pageYOffset > 200 && window.innerWidth < 640) {
