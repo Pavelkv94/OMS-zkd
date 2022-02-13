@@ -94,7 +94,9 @@
   margin: 10px 0px;
   max-width: 277px;
 }
-
+.processes p:first-child {
+  font-weight: 500;
+}
 .processes div div:first-child {
   width: 277px;
   height: 277px;
@@ -110,16 +112,27 @@
 .processes div div:nth-child(2) p:nth-child(2) {
   font-size: 24px;
 }
-.radial div {
-  border-radius: 50%;
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
 }
-.radial {
-  text-align: center;
+
+.team p {
+  margin: 20px 0px;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 640px) {
-  div.processes.slider {
+  div.team.slider {
     display: none;
+  }
+  .team div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -165,31 +178,35 @@
   .processes div div:nth-child(2) p:nth-child(2) {
     font-size: 16px;
   }
-  div.processes.desktop {
+  div.team.desktop {
     display: none;
   }
-  /* 222222222222 */
-  div.processes.slider {
+
+  /* Slider */
+  div.team.slider {
     width: 70%;
-    background-color: white;
   }
-  div.processes.slider .slick-list {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-  }
-  div.processes.slider div p {
-    font-size: 24px;
-  }
-  div.processes.slider div .slick-track .radial {
-    background-color: white;
+  div.team.slider .slick-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  div.processes.slider button.slick-prev::before,
-  div.processes.slider button.slick-next::before {
-    color: gray;
+  div.team.slider .slick-slide p {
+    font-size: 24px;
+    margin: 30px 0px 10px 0px;
+  }
+  .slick-prev, .slick-next {
+    top: 40%;
+  }
+  .slick-dots {
+    font-size: 5px;
+  }
+  .slick-dots li {
+    margin: 0px;
+  }
+  .slick-dots li.slick-active button:before {
+    font-size: 10px;
+    top: 1px;
   }
 }
 

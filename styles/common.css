@@ -19,3 +19,11 @@ body {
   cursor: pointer;
 }
 
+.to-up-mobile {
+  position: fixed;
+  bottom: 70px;
+  right: 50px;
+  display: none;
+  z-index: 22;
+  cursor: pointer;
+}
