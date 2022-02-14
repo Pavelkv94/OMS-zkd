@@ -98,6 +98,10 @@
   align-items: center;
   padding-bottom: 60px;
 }
+.remote-describe h2{
+text-align: center;
+margin: 80px 0px 50px 0px;
+}
 .remote-describe section:first-child {
   max-width: 878px;
 }
@@ -161,7 +165,7 @@
     font-size: 24px;
   }
   .remote-describe h2 {
-    margin: 30px;
+    margin: 50px 0px 30px 0px;
   }
   .remote-describe p {
     font-size: 18px;
