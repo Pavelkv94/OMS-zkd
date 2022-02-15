@@ -126,10 +126,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  .how-it-works {
-    /* min-height: 200px; */
 
-  }
   .how-it-works h2 {
     font-size: 24px;
     margin: 50px 0px 30px 0px;
