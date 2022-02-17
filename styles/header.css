@@ -26,11 +26,20 @@ header:first-child {
   font-weight: normal;
 }
 header:first-child nav {
-  margin-right: 135px;
+  margin-right: 5%;
 }
 .logo-wrapper {
-  margin-left: 135px;
+  margin-left: 5%;
 }
+@media screen and (min-width: 1280px) {
+  header:first-child nav {
+    margin-right: 135px;
+  }
+  .logo-wrapper {
+    margin-left: 135px;
+  }
+}
+
 header:first-child div.logo {
   display: flex;
   width: 102px;
@@ -66,7 +75,12 @@ nav ul > li {
   text-align: center;
   justify-content: center;
 }
-
+@media screen and (max-width: 1280px) {
+  nav ul > li {
+    width: 100%;
+    margin: 0px 10px;
+  }
+}
 .submenu-link:hover {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
@@ -93,19 +107,19 @@ nav ul > li {
   opacity: 1;
   transform: scaleY(1);
   /* background: red; */
-  -webkit-backdrop-filter:blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   cursor: pointer;
 }
 .topmenu > li:hover .submenu li {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter:blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 .topmenu > li:hover .submenu li:hover {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter:blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 .topmenu > li .submenu a,
 ul li a,
@@ -137,7 +151,7 @@ header:nth-child(2) {
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
-    -webkit-backdrop-filter:blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     /* background-color: #414141; */
     position: absolute;
     z-index: 2;
