@@ -23,7 +23,7 @@ header:first-child {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  font-weight: 400;
+  font-weight: normal;
 }
 header:first-child nav {
   margin-right: 135px;
@@ -147,7 +147,7 @@ header:nth-child(2) {
     margin: 7px 23px;
   }
   .menu-btn {
-    width: 30px;
+    width: 36px;
     height: 30px;
     position: relative;
     z-index: 2;
@@ -156,7 +156,7 @@ header:nth-child(2) {
   }
 
   .menu-btn span {
-    width: 30px;
+    width: 36px;
     height: 2px;
     position: absolute;
     top: 50%;
@@ -167,10 +167,10 @@ header:nth-child(2) {
   }
 
   .menu-btn span:nth-of-type(2) {
-    top: calc(50% - 5px);
+    top: calc(50% - 7px);
   }
   .menu-btn span:nth-of-type(3) {
-    top: calc(50% + 5px);
+    top: calc(50% + 7px);
   }
 
   /* Меняем гамбургер иконку, когда меню открыто */
@@ -196,20 +196,18 @@ header:nth-child(2) {
   left: 0;
   z-index: 1;
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter:blur(4px);
-  transform: translateY(-150%);
-  /* background: #414141; */
-
-  transition: transform 0.5s;
+  background: #414141;
+  /* transform: translateY(-150%); */
+  /* transition: transform 0.5s; */
   font-size: 16px;
+  display: none;
 }
 .menu-btn:hover {
   cursor: pointer;
 }
 .menu.active {
-  transform: translateX(0);
+  display: block;
+  /* transform: translateX(0); */
   margin: 0p;
 }
 .menu.active ul,

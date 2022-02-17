@@ -154,7 +154,7 @@
     font-size: 5px;
   }
   .slick-dots li {
-    margin: 0px;
+    margin: 4px;
   }
   .slick-dots li.slick-active button:before {
     font-size: 10px;
