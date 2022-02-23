@@ -3,16 +3,21 @@
   src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"),
     url("../../assets/fonts/Zzz.otf");
 }
+
 /* First Block */
 .remote-main {
   background-color: #222222;
   color: white;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 75px);
+  padding: 75px 0 0 5%;
   position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+}
+.remote-main img {
+  height: 100%;
 }
 .title {
   width: calc(100% - 700px);
@@ -25,7 +30,8 @@
   text-align: left;
   align-self: center;
 }
-.title h2 {
+.title h2,
+.start-car-mobile {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -36,8 +42,7 @@
   align-self: flex-end;
 }
 .title h1,
-.remote-describe h2,
-.start-car-mobile {
+.remote-describe h2 {
   font-family: "ZzzFont";
   font-weight: 500;
   font-size: 64px;
@@ -45,7 +50,38 @@
   font-style: normal;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (max-width: 1024px) {
+  .remote-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0 0 0;
+  }
+  .remote-main img {
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+  }
+  .title h1 {
+    text-align: center;
+  }
+  .title h2 {
+    display: none;
+  }
+  .start-car-mobile {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0;
+  }
+  .start-car-mobile h2 {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .start-car-mobile {
     display: none;
   }
@@ -58,11 +94,7 @@
     min-height: 100%;
     align-items: center;
   }
-  .remote-main img {
-    width: 100%;
-    object-fit: cover;
-    height: 500px;
-  }
+ 
   .remote-main .title h2 {
     display: none;
   }
@@ -82,13 +114,17 @@
     max-width: 340px;
   }
   .start-car-mobile h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     line-height: 125%;
     text-align: center;
   }
 }
-
+@media screen and (max-width: 460px) {
+.remote-main img {
+  object-fit: cover;
+  height: 500px;
+}}
 /* Second Block */
 .remote-describe {
   background: white;
@@ -97,21 +133,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
-.remote-describe h2{
-text-align: center;
-margin: 80px 0px 50px 0px;
+.remote-describe h2 {
+  text-align: center;
+  margin: 80px 0px 50px 0px;
 }
 .remote-describe section:first-child {
   max-width: 878px;
 }
 .remote-describe section:nth-child(2) {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .give-keyfob {
-  max-width: 672px;
+  max-width: 800px;
 }
 .remote-describe section:nth-child(2) div:first-child p:nth-child(2) {
   text-align: right;
@@ -143,14 +180,19 @@ margin: 80px 0px 50px 0px;
   font-size: 36px;
   margin: 0px 20px 20px 0px;
 }
-
+.remote-describe p:first-child {
+  margin-right: 100px;
+}
 .remote-describe section:nth-child(3) {
   display: flex;
 }
-
+.fake-images {
+  width: 500px;
+  height: 600px;
+}
 @media screen and (min-width: 640px) {
   .remote-describe section {
-    width: 76%;
+    width: 80%;
   }
   .give-keyfob-mobile {
     display: none;
@@ -158,7 +200,6 @@ margin: 80px 0px 50px 0px;
 }
 @media screen and (max-width: 640px) {
   .remote-describe {
-    padding-bottom: 0px;
     min-height: 750px;
   }
   .remote-describe h2,
@@ -171,9 +212,6 @@ margin: 80px 0px 50px 0px;
   .remote-describe p {
     font-size: 18px;
     margin: 0px 0px 10px 0px;
-  }
-  .remote-describe section {
-    padding: 0px 20px;
   }
   .fake-img-one {
     width: 295px;
@@ -188,7 +226,12 @@ margin: 80px 0px 50px 0px;
   .give-keyfob {
     display: none;
   }
+  .remote-describe section .give-keyfob-mobile p {
+    margin-right: 0px;
+    padding: 0px 20px;
+  }
   .fake-images {
+    width: 350px;
     height: 500px;
   }
 }

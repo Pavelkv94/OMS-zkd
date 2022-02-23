@@ -3,6 +3,7 @@
   src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"),
     url("../../assets/fonts/Zzz.otf");
 }
+
 header:first-child {
   background: #222222;
 }
@@ -24,7 +25,7 @@ header:first-child {
 .topmenu > li:hover .submenu li:hover {
   background-color: #555555;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
   header:nth-child(2) {
     background-color: #414141;}
 }
@@ -44,7 +45,7 @@ header:first-child {
 .online-monitor-page section {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   width: 80%;
 }
@@ -87,7 +88,11 @@ header:first-child {
   font-style: normal;
   text-align: center;
 }
-
+@media screen and (max-width: 1280px) {
+  .online-monitor-page section {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 640px) {
   .online-monitor-page {
     padding-top: 60px;
@@ -189,7 +194,12 @@ header:first-child {
   height: 450px;
   background-color: gray;
 }
-
+@media screen and (max-width: 1280px) {
+  .online-monitor-descript section:nth-child(2),
+  .online-monitor-descript section:nth-child(3){
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 640px) {
   .fake-img-mobile {
     display: none;

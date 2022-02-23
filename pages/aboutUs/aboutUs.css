@@ -2,7 +2,6 @@
   font-family: "ZzzFont";
   src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"), url("../../assets/fonts/Zzz.otf");
 }
-
 /* First Block */
 .zakodix {
   background-color: #222222;
@@ -87,22 +86,29 @@
   font-size: 36px;
   margin: 50px 0px;
 }
+/* ! FAKE IMG ---------------------- */
 .fake-img {
   width: 575px;
   height: 378px;
   background-color: gray;
 }
+
+/* ! FAKE IMG ---------------------- */
 .about-us .contact-btn button {
   background: #222222;
   color: white;
   justify-content: flex-end;
   margin-right: 10px;
 }
+.about-us section {
+  width: 80%;
+}
 .about-us section:nth-child(2) p{
 margin: 0px 0px 80px 0px;
 }
 .about-us section:nth-child(3) {
   display: flex;
+  justify-content: space-between;
 }
 .about-us section:nth-child(3) div {
   margin: 10px 10px 10px 0px;
@@ -120,11 +126,8 @@ margin: 0px 0px 80px 0px;
   margin: 15px 0px;
 }
 @media screen and (min-width: 640px) {
-  .about-us section {
-    width: 76%;
-  }
   .about-us section:nth-child(3) div {
-    min-width: 575px;
+    width: 575px;
   }
   .about-us section:nth-child(3) .contact-btn-mobile {
     display: none;
@@ -143,7 +146,7 @@ margin: 0px 0px 80px 0px;
     margin: 0px;
   }
   .about-us section {
-    padding: 0px 20px;
+    width: calc(90%);
   }
   .about-us section:nth-child(2) p {
     margin: 0px 0px 40px 0px;
