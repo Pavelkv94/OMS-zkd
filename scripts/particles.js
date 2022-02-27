@@ -4,10 +4,12 @@ let resizeReset = function() {
   h = canvasBody.height = window.innerHeight;
 }
 
+const particleCount = window.innerWidth < 640 ? 25 : 50;
+
 const opts = { 
   particleColor: "rgb(200,200,200)",
   lineColor: "rgb(200,200,200)",
-  particleAmount: 50,
+  particleAmount: particleCount,
   defaultSpeed: 1,
   variantSpeed: 1,
   defaultRadius: 2,
