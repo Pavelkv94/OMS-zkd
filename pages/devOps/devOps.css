@@ -217,15 +217,25 @@
 
 /* Animated Tech background */
 .animate-tech-background {
-    min-height: 686px;
+    height: 686px;
     width: 100%;
     background: #222222;
+    position: relative;
 }
-@media screen and (max-width: 640px) {
+
+#tech_canvas {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* @media screen and (max-width: 640px) {
     .animate-tech-background {
         height: 100vh;
     }
-}
+} */
 
 /* Contact Us */
 .contact-us {
