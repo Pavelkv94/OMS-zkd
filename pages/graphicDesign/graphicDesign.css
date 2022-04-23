@@ -187,37 +187,7 @@
     .logo-design div div:nth-child(2) p:nth-child(2) {
         font-size: 16px;
     }
-    div.branding.desktop {
-        display: none;
-    }
-
-    /* Slider */
-    div.branding.slider {
-        width: 70%;
-    }
-    div.branding.slider .slick-slide {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    div.branding.slider .slick-slide p {
-        font-size: 24px;
-        margin: 30px 0px 10px 0px;
-    }
-    .slick-prev,
-    .slick-next {
-        top: 40%;
-    }
-    .slick-dots {
-        font-size: 5px;
-    }
-    .slick-dots li {
-        margin: 0px;
-    }
-    .slick-dots li.slick-active button:before {
-        font-size: 10px;
-        top: 1px;
-    }
+    
 }
 
 

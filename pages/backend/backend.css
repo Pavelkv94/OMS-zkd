@@ -4,7 +4,7 @@
     url("../../assets/fonts/Zzz.otf");
 }
 /* First Block */
-.testing-main {
+.backend-main {
   background-color: #222222;
   width: 100%;
   min-height: 100vh;
@@ -34,7 +34,9 @@
   max-width: 800px;
 }
 .title h1,
-.testing-descript h2,
+.backend-descript h2,
+.ruby-second h2,
+.python h2,
 .contact-us h4 {
   font-family: "ZzzFont";
   font-weight: 500;
@@ -60,105 +62,192 @@
 }
 
 /* Second Block */
-.testing-descript {
+.backend-descript {
   background: white;
   width: 100%;
-  min-height: 840px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.testing-descript section {
+.backend-descript section {
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.testing-descript h2 {
+.backend-descript h2 {
   font-size: 48px;
   margin: 80px 0px 50px 0px;
 }
-.testing-descript p {
+.backend-descript p {
   font-size: 24px;
   margin: 0px;
 }
-.logo-testing {
+.logo-node {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
 }
-.logo-testing p {
+.logo-node p {
   margin: 20px 0px;
   max-width: 377px;
   text-align: center;
 }
-.logo-testing div div:first-child {
+.logo-node div div:first-child {
   width: 377px;
   height: 377px;
-  border-radius: 50%;
   background: #222222;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
 }
-.logo-testing div div:first-child h2 {
-  font-size: 40px;
-}
-.logo-testing div div:nth-child(2) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logo-testing div div:nth-child(2) p:nth-child(2) {
+
+.logo-node div div:nth-child(2) p:nth-child(2) {
   font-size: 24px;
 }
 
+/* Ruby */
+.ruby-block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.ruby-item {
+  width: 278px;
+}
+.ruby-item p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 104.6%;
+  text-align: center;
+}
+.ruby-item div {
+  width: 278px;
+  height: 278px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* ruby-second */
+.ruby-second,
+.python {
+  background: #222222;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+.ruby-second section,
+.python section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.ruby-second-block,
+.python-block {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.ruby-second-radial {
+  width: 280px;
+  height: 280px;
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125.6%;
+}
+.python-radial {
+  width: 378px;
+  height: 378px;
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125.6%;
+}
+.python-radial p {
+  width: 300px;
+}
+
+
+.radial {
+  width: 250px;
+  height: 250px;
+  background-color: #222222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 640px) {
-  .testing-descript section {
+  .backend-descript section {
     width: 100%;
   }
-  .testing-descript h2 {
+  .backend-descript h2 {
     font-size: 24px;
     margin: 50px 0px 10px 0px;
   }
-  .testing-descript section:nth-child(2) h2 {
+  .backend-descript section:nth-child(2) h2 {
     margin: 30px 0px 30px 0px;
   }
-  .testing-descript section:nth-child(3) h2 {
+  .backend-descript section:nth-child(3) h2 {
     margin: 50px 0px 30px 0px;
   }
-  .testing-descript p:first-child {
+  .backend-descript p:first-child {
     font-size: 18px;
     font-weight: 500;
   }
-  .logo-testing div {
+  .logo-node div {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 10px 0px;
   }
-  .logo-testing p {
+  .logo-node p {
     margin: 0px 0px 10px 0px;
   }
-  .logo-testing.all div div:first-child {
+  .logo-node.all div div:first-child {
     width: 216px;
     height: 216px;
   }
-  .logo-testing div div:first-child {
+  .logo-node div div:first-child {
     width: 216px;
   }
-  .logo-testing div div:nth-child(2) {
+  .logo-node div div:nth-child(2) {
     width: 138px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   }
-  .logo-testing div div:nth-child(2) p:nth-child(2) {
+  .logo-node div div:nth-child(2) p:nth-child(2) {
     font-size: 16px;
   }
   
