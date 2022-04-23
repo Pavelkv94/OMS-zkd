@@ -84,8 +84,8 @@
 .logo-business {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  max-width: 1200px;
 }
 
 .logo-business div div:first-child {
@@ -98,7 +98,7 @@
   justify-content: center;
   color: white;
   text-align: center;
-  margin: 5px;
+  margin: 10px;
 }
 .logo-business div div:first-child h3 {
   margin: 30px 0px 40px 0px;
@@ -150,7 +150,6 @@
   line-height: 125.6%;
 }
 
-
 @media screen and (max-width: 640px) {
   .business-descript section {
     width: 100%;
@@ -197,4 +196,3 @@
     font-size: 16px;
   }
 }
-

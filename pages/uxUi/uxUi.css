@@ -88,14 +88,13 @@
 .logo-ux {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  max-width: 1200px;
 }
 .logo-ux p {
   margin: 20px 0px;
   max-width: 377px;
   text-align: center;
-
 }
 .logo-ux div div:first-child {
   width: 377px;
@@ -133,7 +132,7 @@
 }
 
 /* reasons */
-.reasons  {
+.reasons {
   background: #222222;
   width: 100%;
   display: flex;
@@ -166,9 +165,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.reasons-radial p{
+.reasons-radial p {
   width: 254px;
   text-align: center;
   font-weight: 500;
@@ -222,5 +220,4 @@
   .logo-ux div div:nth-child(2) p:nth-child(2) {
     font-size: 16px;
   }
-  
 }

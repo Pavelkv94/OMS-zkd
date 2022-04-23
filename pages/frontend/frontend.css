@@ -86,10 +86,11 @@
 }
 .logo-frontend {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
+  max-width: 1200px;
 }
+
 .logo-frontend p {
   margin: 20px 0px;
   max-width: 377px;
