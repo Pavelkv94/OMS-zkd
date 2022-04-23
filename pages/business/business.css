@@ -117,7 +117,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+}
+.benefits h2 {
+  font-size: 48px;
 }
 .benefits section {
   width: 80%;

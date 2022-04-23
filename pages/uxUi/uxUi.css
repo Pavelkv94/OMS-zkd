@@ -4,7 +4,7 @@
     url("../../assets/fonts/Zzz.otf");
 }
 /* First Block */
-.backend-main {
+.ux-main {
   background-color: #222222;
   width: 100%;
   min-height: 100vh;
@@ -34,8 +34,8 @@
   max-width: 800px;
 }
 .title h1,
-.backend-descript h2,
-.ruby-second h2,
+.ux-descript h2,
+.reasons h2,
 .python h2,
 .contact-us h4 {
   font-family: "ZzzFont";
@@ -62,7 +62,7 @@
 }
 
 /* Second Block */
-.backend-descript {
+.ux-descript {
   background: white;
   width: 100%;
   display: flex;
@@ -70,32 +70,34 @@
   align-items: center;
   justify-content: center;
 }
-.backend-descript section {
+.ux-descript section {
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.backend-descript h2 {
+.ux-descript h2 {
   font-size: 48px;
   margin: 80px 0px 50px 0px;
 }
-.backend-descript p {
+.ux-descript p {
   font-size: 24px;
   margin: 0px;
+  font-weight: 500;
 }
-.logo-node {
+.logo-ux {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
 }
-.logo-node p {
+.logo-ux p {
   margin: 20px 0px;
   max-width: 377px;
   text-align: center;
+
 }
-.logo-node div div:first-child {
+.logo-ux div div:first-child {
   width: 377px;
   height: 377px;
   background: #222222;
@@ -106,28 +108,21 @@
   color: white;
 }
 
-.logo-node div div:nth-child(2) p:nth-child(2) {
+.logo-ux div div:nth-child(2) p:nth-child(2) {
   font-size: 24px;
 }
 
-/* Ruby */
-.ruby-block {
+/* UX/UI Process */
+.ux-block {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
 }
-.ruby-item {
+.ux-item {
   width: 278px;
 }
-.ruby-item p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 104.6%;
-  text-align: center;
-}
-.ruby-item div {
+.ux-item div {
   width: 278px;
   height: 278px;
   background-color: #222222;
@@ -137,9 +132,8 @@
   margin-bottom: 20px;
 }
 
-/* ruby-second */
-.ruby-second,
-.python {
+/* reasons */
+.reasons  {
   background: #222222;
   width: 100%;
   display: flex;
@@ -147,25 +141,23 @@
   align-items: center;
   padding-bottom: 80px;
 }
-.ruby-second h2, .python h2 {
+.reasons h2 {
   font-size: 48px;
 }
-.ruby-second section,
-.python section {
+.reasons section {
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
 }
-.ruby-second-block,
-.python-block {
+.reasons-block {
   display: flex;
   justify-content: space-around;
   width: 100%;
   flex-wrap: wrap;
 }
-.ruby-second-radial {
+.reasons-radial {
   width: 280px;
   height: 280px;
   color: black;
@@ -174,83 +166,60 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+.reasons-radial p{
+  width: 254px;
   text-align: center;
   font-weight: 500;
   font-size: 24px;
   line-height: 125.6%;
-}
-.python-radial {
-  width: 378px;
-  height: 378px;
-  color: black;
-  border-radius: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 125.6%;
-}
-.python-radial p {
-  width: 300px;
-}
-
-
-.radial {
-  width: 250px;
-  height: 250px;
-  background-color: #222222;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 640px) {
-  .backend-descript section {
+  .ux-descript section {
     width: 100%;
   }
-  .backend-descript h2 {
+  .ux-descript h2 {
     font-size: 24px;
     margin: 50px 0px 10px 0px;
   }
-  .backend-descript section:nth-child(2) h2 {
+  .ux-descript section:nth-child(2) h2 {
     margin: 30px 0px 30px 0px;
   }
-  .backend-descript section:nth-child(3) h2 {
+  .ux-descript section:nth-child(3) h2 {
     margin: 50px 0px 30px 0px;
   }
-  .backend-descript p:first-child {
+  .ux-descript p:first-child {
     font-size: 18px;
     font-weight: 500;
   }
-  .logo-node div {
+  .logo-ux div {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 10px 0px;
   }
-  .logo-node p {
+  .logo-ux p {
     margin: 0px 0px 10px 0px;
   }
-  .logo-node.all div div:first-child {
+  .logo-ux.all div div:first-child {
     width: 216px;
     height: 216px;
   }
-  .logo-node div div:first-child {
+  .logo-ux div div:first-child {
     width: 216px;
   }
-  .logo-node div div:nth-child(2) {
+  .logo-ux div div:nth-child(2) {
     width: 138px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   }
-  .logo-node div div:nth-child(2) p:nth-child(2) {
+  .logo-ux div div:nth-child(2) p:nth-child(2) {
     font-size: 16px;
   }
   

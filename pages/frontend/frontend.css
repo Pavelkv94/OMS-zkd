@@ -132,6 +132,9 @@
   align-items: center;
   color: white;
 }
+.options h2 {
+  font-size: 48px;
+}
 .options-block {
   display: flex;
   justify-content: space-around;
