@@ -83,18 +83,18 @@
   font-size: 24px;
   margin: 0px;
 }
-.logo-design {
+.logo-testing {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
 }
-.logo-design p {
+.logo-testing p {
   margin: 20px 0px;
   max-width: 377px;
   text-align: center;
 }
-.logo-design div div:first-child {
+.logo-testing div div:first-child {
   width: 377px;
   height: 377px;
   border-radius: 50%;
@@ -104,15 +104,15 @@
   justify-content: center;
   color: white;
 }
-.logo-design div div:first-child h2 {
+.logo-testing div div:first-child h2 {
   font-size: 40px;
 }
-.logo-design div div:nth-child(2) {
+.logo-testing div div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.logo-design div div:nth-child(2) p:nth-child(2) {
+.logo-testing div div:nth-child(2) p:nth-child(2) {
   font-size: 24px;
 }
 
@@ -134,31 +134,31 @@
     font-size: 18px;
     font-weight: 500;
   }
-  .logo-design div {
+  .logo-testing div {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 10px 0px;
   }
-  .logo-design p {
+  .logo-testing p {
     margin: 0px 0px 10px 0px;
   }
-  .logo-design.all div div:first-child {
+  .logo-testing.all div div:first-child {
     width: 216px;
     height: 216px;
   }
-  .logo-design div div:first-child {
+  .logo-testing div div:first-child {
     width: 216px;
   }
-  .logo-design div div:nth-child(2) {
+  .logo-testing div div:nth-child(2) {
     width: 138px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   }
-  .logo-design div div:nth-child(2) p:nth-child(2) {
+  .logo-testing div div:nth-child(2) p:nth-child(2) {
     font-size: 16px;
   }
   div.branding.desktop {
