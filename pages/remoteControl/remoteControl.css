@@ -8,9 +8,9 @@
 .remote-main {
   background-color: #222222;
   color: white;
-  width: 100%;
+  width: 90%;
   min-height: calc(100vh - 75px);
-  padding: 75px 0 0 5%;
+  padding: 75px 0 0 10%;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -20,7 +20,7 @@
   height: 100%;
 }
 .title {
-  width: calc(100% - 700px);
+  width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +29,12 @@
   max-width: 514px;
   text-align: left;
   align-self: center;
+  align-self: flex-start;
 }
+.title h2 {
+  align-self: flex-end;
+}
+
 .title h2,
 .start-car-mobile {
   font-family: "Roboto", sans-serif;
@@ -144,8 +149,9 @@
 }
 .remote-describe section:nth-child(2) {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 80%;
 }
 .give-keyfob {
   max-width: 800px;
@@ -159,18 +165,23 @@
 .remote-describe section:nth-child(2) div:nth-child(2) div {
   position: absolute;
 }
+
+.fake-images {
+   width: 540px;
+  height: 600px; 
+}
 .fake-img-one {
-  width: 476px;
-  height: 480px;
-  background-color: gray;
+  /* width: 476px; */
+  /* height: 480px; */
+  /* background-color: gray; */
 }
 .fake-img-two {
-  width: 290px;
-  height: 320px;
-  background-color: gray;
-  border: 1px solid black;
-  top: 280px;
-  left: -100px;
+  /* width: 290px; */
+  /* height: 320px; */
+  /* background-color: gray; */
+  /* border: 1px solid black; */
+  top: 350px;
+  left: -160px;
 }
 
 .remote-describe h2 {
@@ -185,10 +196,6 @@
 }
 .remote-describe section:nth-child(3) {
   display: flex;
-}
-.fake-images {
-  width: 500px;
-  height: 600px;
 }
 @media screen and (min-width: 640px) {
   .remote-describe section {

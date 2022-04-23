@@ -28,10 +28,10 @@ header:first-child nav {
 
 @media screen and (min-width: 1280px) {
   header:first-child nav {
-    margin-right: 135px;
+    margin-right: 10%;
   }
   .logo-wrapper {
-    margin-left: 135px;
+    margin-left: 10%;
   }
 }
 
