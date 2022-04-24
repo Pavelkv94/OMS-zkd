@@ -151,7 +151,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
+  width: 1200px;
 }
 .give-keyfob {
   max-width: 800px;
@@ -192,14 +192,14 @@
   margin: 0px 20px 20px 0px;
 }
 .remote-describe p:first-child {
-  margin-right: 100px;
+max-width: 570px;
 }
 .remote-describe section:nth-child(3) {
   display: flex;
 }
 @media screen and (min-width: 640px) {
   .remote-describe section {
-    width: 80%;
+    width: 1200px;
   }
   .give-keyfob-mobile {
     display: none;

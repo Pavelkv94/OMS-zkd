@@ -60,7 +60,7 @@ header:first-child {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
+  width: 1200px;
 }
 .contact-us section div {
   display: flex;

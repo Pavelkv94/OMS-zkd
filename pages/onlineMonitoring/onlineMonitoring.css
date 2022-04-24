@@ -47,7 +47,7 @@ header:first-child {
   align-items: center;
   /* flex-wrap: wrap; */
   justify-content: space-between;
-  width: 80%;
+  width: 1200px;
 }
 .title {
   font-family: "ZzzFont";
@@ -148,6 +148,7 @@ header:first-child {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 80px;
+  justify-content: space-between;
   max-width: 1200px;
 }
 .online-monitor-descript section:nth-child(2) div {
@@ -184,6 +185,7 @@ header:first-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 1200px;
 }
 .online-monitor-descript section:nth-child(3) p {
   max-width: 672px;

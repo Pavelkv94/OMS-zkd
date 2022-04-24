@@ -1,10 +1,12 @@
 header:first-child a {
   text-decoration: none;
 }
+
 header:first-child div.logo p:hover,
 header:first-child div.logo img:hover {
   cursor: pointer;
 }
+
 /* Header */
 header:first-child {
   width: 100%;
@@ -14,31 +16,25 @@ header:first-child {
   top: 0px;
   z-index: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   font-weight: normal;
 }
-header:first-child nav {
-  margin-right: 5%;
-}
-.logo-wrapper {
-  margin-left: 5%;
+
+header:first-child section {
+  width: 1200px;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media screen and (min-width: 1280px) {
-  header:first-child nav {
-    margin-right: 10%;
-  }
-  .logo-wrapper {
-    margin-left: 10%;
-  }
-}
 
 @media screen and (max-width: 1080px) {
   .logo-wrapper {
     display: none;
   }
+
   header:first-child {
     justify-content: center;
   }
@@ -57,6 +53,7 @@ header:first-child div.logo {
   justify-content: center;
   align-items: center;
 }
+
 header:first-child div.logo p {
   color: white;
   cursor: default;
@@ -70,13 +67,15 @@ nav ul {
   font-size: 24px;
   display: flex;
 }
+
 nav ul li:hover {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   cursor: pointer;
   flex-wrap: nowrap;
 }
-nav ul > li {
+
+nav ul>li {
   display: flex;
   position: relative;
   width: 200px;
@@ -85,23 +84,29 @@ nav ul > li {
   text-align: center;
   justify-content: center;
 }
-nav ul > .submenu-link:nth-child(2) {
+
+nav ul>.submenu-link:nth-child(2) {
   width: 250px;
 }
-nav ul > .submenu-link:nth-child(2) .submenu {
+
+nav ul>.submenu-link:nth-child(2) .submenu {
   width: 250px;
 }
-nav ul > .submenu-link:nth-child(2) .submenu li {
+
+nav ul>.submenu-link:nth-child(2) .submenu li {
   width: 100%;
 }
-nav ul > .submenu-link:nth-child(2) .submenu li:nth-child(2) a {
+
+nav ul>.submenu-link:nth-child(2) .submenu li:nth-child(2) a {
   padding: 0 30px;
 }
+
 .submenu-link:hover {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   cursor: pointer;
 }
+
 .submenu {
   /* background: red; */
   backdrop-filter: blur(4px);
@@ -119,7 +124,7 @@ nav ul > .submenu-link:nth-child(2) .submenu li:nth-child(2) a {
   transition: 0.5s ease-in-out;
 }
 
-.topmenu > li:hover .submenu {
+.topmenu>li:hover .submenu {
   opacity: 1;
   transform: scaleY(1);
   /* background: red; */
@@ -127,13 +132,16 @@ nav ul > .submenu-link:nth-child(2) .submenu li:nth-child(2) a {
   backdrop-filter: blur(4px);
   cursor: pointer;
 }
-.topmenu > li:hover .submenu li {
+
+.topmenu>li:hover .submenu li {
   background: #292929;
 }
-.topmenu > li:hover .submenu li:hover {
+
+.topmenu>li:hover .submenu li:hover {
   background: rgb(61, 61, 61);
 }
-.topmenu > li .submenu a,
+
+.topmenu>li .submenu a,
 ul li a,
 .menu li {
   text-decoration: none;
@@ -161,43 +169,53 @@ ul li a,
   font-size: 16px;
   display: none;
 }
+
 .menu-btn:hover {
   cursor: pointer;
 }
+
 .menu.active {
   display: block;
   /* transform: translateX(0); */
   margin: 0p;
 }
+
 .menu.active ul,
 .menu ul {
   padding: 0px;
   margin: 0px;
 }
+
 .menu li {
   list-style-type: none;
   padding: 10px 0px;
 }
+
 .menu li:hover {
   cursor: pointer;
   background-color: #222222;
 }
+
 .first-submenu-mobile img,
 .second-submenu-mobile img {
   padding-left: 5px;
 }
+
 .first-sub-item.active li,
 .second-sub-item.active li {
   display: flex;
 }
+
 .first-sub-item li,
 .second-sub-item li {
   display: none;
 }
+
 .current {
   padding: 2px;
   border-bottom: 2px solid white;
 }
+
 @media screen and (min-width: 800px) {
   header:nth-child(2) {
     display: none;
@@ -218,9 +236,11 @@ ul li a,
     width: 100vw;
     min-width: 375px;
   }
+
   header:nth-child(2) div img {
     margin: 7px 23px;
   }
+
   .menu-btn {
     width: 36px;
     height: 30px;
@@ -244,6 +264,7 @@ ul li a,
   .menu-btn span:nth-of-type(2) {
     top: calc(50% - 7px);
   }
+
   .menu-btn span:nth-of-type(3) {
     top: calc(50% + 7px);
   }
@@ -252,10 +273,12 @@ ul li a,
   .menu-btn.active span:nth-of-type(1) {
     display: none;
   }
+
   .menu-btn.active span:nth-of-type(2) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(45deg);
   }
+
   .menu-btn.active span:nth-of-type(3) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(-45deg);
