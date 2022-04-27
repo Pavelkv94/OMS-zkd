@@ -129,6 +129,16 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 1200px) {
+    .design-descript section {
+        width: 90%;
+    }
+    .logo-design {
+
+    }
+}
+
 @media screen and (min-width: 640px) {
     div.branding.slider {
         display: none;
@@ -137,6 +147,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .mobile-img, .branding.slider {
+        display: none;
     }
 }
 
@@ -167,6 +180,9 @@
         justify-content: space-around;
         margin: 10px 0px;
     }
+    .desktop-img, .branding.desktop {
+        display: none;
+    }
     .logo-design p {
         margin: 0px 0px 10px 0px;
     }
@@ -187,5 +203,40 @@
     .logo-design div div:nth-child(2) p:nth-child(2) {
         font-size: 16px;
     }
-    
+    /* Slider */
+  div.branding.slider {
+    width: 70%;
+  }
+
+  div.branding.slider .slick-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.branding.slider .slick-slide p:last-child {
+    font-size: 24px;
+    margin: 15px 0px 10px 0px;
+  }
+  .branding p:nth-child(2) {
+    font-size: 24px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 30%;
+  }
+
+  .slick-dots {
+    font-size: 5px;
+  }
+
+  .slick-dots li {
+    margin: 0px;
+  }
+
+  .slick-dots li.slick-active button:before {
+    font-size: 10px;
+    top: 1px;
+  }
 }
