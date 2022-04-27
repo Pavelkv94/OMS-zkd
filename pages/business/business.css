@@ -3,6 +3,7 @@
   src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"),
     url("../../assets/fonts/Zzz.otf");
 }
+
 /* First Block */
 .business-main {
   background-color: #222222;
@@ -14,6 +15,7 @@
   justify-content: center;
   z-index: -1;
 }
+
 #zakodixnet_canvas {
   position: absolute;
   display: block;
@@ -22,6 +24,7 @@
   z-index: -1;
   width: 100%;
 }
+
 .title {
   font-family: "ZzzFont";
   font-weight: 500;
@@ -33,6 +36,7 @@
   flex-wrap: wrap;
   max-width: 880px;
 }
+
 .title h1,
 .business-descript h2,
 .benefits h2,
@@ -44,14 +48,17 @@
   font-style: normal;
   text-align: center;
 }
+
 @media screen and (max-width: 640px) {
   .title h1 {
     font-size: 36px;
     margin: 80px 0px;
   }
+
   .title h1:first-child {
     max-width: 320px;
   }
+
   .title {
     display: flex;
     flex-direction: column;
@@ -69,13 +76,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
+
 .business-descript section {
   width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 80px;
 }
+
 .business-descript h2 {
   font-size: 48px;
   margin: 80px 0px 50px 0px;
@@ -100,6 +111,7 @@
   text-align: center;
   margin: 10px;
 }
+
 .logo-business div div:first-child h3 {
   margin: 30px 0px 40px 0px;
   font-size: 36px;
@@ -118,9 +130,11 @@
   flex-direction: column;
   align-items: center;
 }
+
 .benefits h2 {
   font-size: 48px;
 }
+
 .benefits section {
   width: 1200px;
   display: flex;
@@ -128,13 +142,15 @@
   align-items: center;
   color: white;
 }
-.benefits-block {
+
+.benefits-block-desktop {
   display: flex;
   justify-content: space-around;
   width: 100%;
   flex-wrap: wrap;
   margin-bottom: 80px;
 }
+
 .benefits-radial {
   width: 214px;
   height: 214px;
@@ -150,49 +166,147 @@
   line-height: 125.6%;
 }
 
+@media screen and (max-width: 1200px) {
+
+  .benefits section,
+  .business-descript section {
+    width: 90%;
+  }
+
+  .logo-business {
+    justify-content: space-around;
+  }
+
+  .benefits-radial {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .benefits-block-mobile {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 640px) {
+  .benefits-block-desktop {
+    display: none;
+  }
+
+  .business-descript {
+    min-height: 400px;
+
+  }
+
   .business-descript section {
     width: 100%;
+    margin-bottom: 50px;
   }
-  .business-descript h2 {
+
+  .benefits {
+    min-height: 430px;
+  }
+
+  .business-descript h2,
+  .benefits h2 {
     font-size: 24px;
     margin: 50px 0px 10px 0px;
   }
+
   .business-descript section:nth-child(2) h2 {
     margin: 30px 0px 30px 0px;
   }
+
   .business-descript section:nth-child(3) h2 {
     margin: 50px 0px 30px 0px;
   }
+
   .business-descript p:first-child {
     font-size: 18px;
     font-weight: 500;
   }
+
+  .logo-business {
+    width: 92%;
+  }
+
+  .logo-business h3 {
+    margin: 0;
+  }
+
   .logo-business div {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 10px 0px;
   }
+
   .logo-business p {
     margin: 0px 0px 10px 0px;
   }
+
   .logo-business.all div div:first-child {
-    width: 216px;
-    height: 216px;
+    width: 170px;
+    height: 170px;
   }
-  .logo-business div div:first-child {
-    width: 216px;
+
+  .logo-business div div:first-child h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 104.6%;
+    text-align: center;
+    margin: 0;
+    width: 156px;
   }
-  .logo-business div div:nth-child(2) {
-    width: 138px;
+
+  /* Slider */
+  div.benefits-block-mobile.slider {
+    width: 70%;
+  }
+
+  div.benefits-block-mobile.slider .slick-slide {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
   }
-  .logo-business div div:nth-child(2) p:nth-child(2) {
+
+  div.benefits-block-mobile.slider .slick-slide p {
     font-size: 16px;
+    margin: 15px 0px 10px 0px;
+  }
+
+  .technologies p:nth-child(2) {
+    font-size: 24px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 30%;
+  }
+
+  div.benefits-block-mobile.slider .slick-dots li button:before {
+    color: white;
+  }
+
+  .slick-dots {
+    font-size: 5px;
+  }
+
+  .slick-dots li {
+    margin: 0px;
+  }
+
+  .slick-dots li.slick-active button:before {
+    font-size: 10px;
+    top: 1px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .logo-business.all div div:first-child {
+    margin: 5px;
+  }
+  .logo-business {
+    width: 98%;
   }
 }
