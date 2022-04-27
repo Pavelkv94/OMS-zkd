@@ -3,6 +3,7 @@
   src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"),
     url("../../assets/fonts/Zzz.otf");
 }
+
 /* First Block */
 .backend-main {
   background-color: #222222;
@@ -14,6 +15,7 @@
   justify-content: center;
   z-index: -1;
 }
+
 #zakodixnet_canvas {
   position: absolute;
   display: block;
@@ -22,6 +24,7 @@
   z-index: -1;
   width: 100%;
 }
+
 .title {
   font-family: "ZzzFont";
   font-weight: 500;
@@ -33,6 +36,7 @@
   flex-wrap: wrap;
   max-width: 800px;
 }
+
 .title h1,
 .backend-descript h2,
 .ruby-second h2,
@@ -45,14 +49,17 @@
   font-style: normal;
   text-align: center;
 }
+
 @media screen and (max-width: 640px) {
   .title h1 {
     font-size: 36px;
     margin: 80px 0px;
   }
+
   .title h1:first-child {
     max-width: 320px;
   }
+
   .title {
     display: flex;
     flex-direction: column;
@@ -70,32 +77,39 @@
   align-items: center;
   justify-content: center;
 }
+
 .backend-descript section {
   width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 80px;
 }
+
 .backend-descript h2 {
   font-size: 48px;
   margin: 80px 0px 50px 0px;
 }
+
 .backend-descript p {
   font-size: 24px;
   margin: 0px;
 }
-.logo-node {
+
+.node-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
 }
-.logo-node p {
+
+.node-block p {
   margin: 20px 0px;
   max-width: 377px;
   text-align: center;
 }
-.logo-node div div:first-child {
+
+.node-item div {
   width: 377px;
   height: 377px;
   background: #222222;
@@ -106,7 +120,7 @@
   color: white;
 }
 
-.logo-node div div:nth-child(2) p:nth-child(2) {
+.node-block div div:nth-child(2) p:nth-child(2) {
   font-size: 24px;
 }
 
@@ -117,9 +131,11 @@
   width: 100%;
   justify-content: space-around;
 }
+
 .ruby-item {
   width: 278px;
 }
+
 .ruby-item p {
   font-style: normal;
   font-weight: 400;
@@ -127,6 +143,7 @@
   line-height: 104.6%;
   text-align: center;
 }
+
 .ruby-item div {
   width: 278px;
   height: 278px;
@@ -147,9 +164,12 @@
   align-items: center;
   padding-bottom: 80px;
 }
-.ruby-second h2, .python h2 {
+
+.ruby-second h2,
+.python h2 {
   font-size: 48px;
 }
+
 .ruby-second section,
 .python section {
   width: 1200px;
@@ -158,100 +178,190 @@
   align-items: center;
   color: white;
 }
-.ruby-second-block,
-.python-block {
+
+.ruby-desktop-block,
+.python-desktop-block {
   display: flex;
   justify-content: space-around;
   width: 100%;
   flex-wrap: wrap;
 }
-.ruby-second-radial {
+
+.ruby-desktop-radial,
+.mobile-radial,
+.python-desktop-radial {
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125.6%;
+  margin: 10px;
+}
+
+.ruby-desktop-radial {
   width: 280px;
   height: 280px;
-  color: black;
-  border-radius: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 125.6%;
 }
-.python-radial {
+
+
+
+.mobile-radial {
+  width: 250px;
+  height: 250px;
+}
+
+.python-desktop-radial {
   width: 378px;
   height: 378px;
-  color: black;
-  border-radius: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 125.6%;
 }
-.python-radial p {
+
+.python-desktop-radial p {
   width: 300px;
 }
 
+.mobile-font {
+  font-size: 16px;
+  font-weight: 400;
+}
 
-.radial {
-  width: 250px;
-  height: 250px;
-  background-color: #222222;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 1200px) {
+
+  .backend-descript section,
+  .ruby-second section,
+  .python section {
+    width: 90%;
+  }
+
+  .ruby-desktop-radial,
+  .python-desktop-radial {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+
+  .mobile-img,
+  .mobile-slider {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 640px) {
+
+  .desktop-img,
+  .ruby-desktop-block,
+  .python-desktop-block {
+    display: none;
+  }
+
   .backend-descript section {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .ruby-block,
+  .node-block {
+    flex-direction: column;
     width: 100%;
   }
-  .backend-descript h2 {
-    font-size: 24px;
-    margin: 50px 0px 10px 0px;
+
+  .ruby-item,
+  .node-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
+
+
+  .ruby-item div,
+  .node-item div {
+    width: 216px;
+    height: 216px;
+    margin-bottom: 20px;
+  }
+
+  .ruby-item p,
+  .node-item p {
+    width: 138px;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 104.6%;
+    text-align: left;
+    align-self: center;
+  }
+
+  .ruby-second,
+  .python {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .backend-descript h2,
+  .ruby-second h2,
+  .python h2 {
+    font-size: 24px;
+    margin: 50px 0px 30px 0px;
+  }
+
   .backend-descript section:nth-child(2) h2 {
     margin: 30px 0px 30px 0px;
   }
+
   .backend-descript section:nth-child(3) h2 {
     margin: 50px 0px 30px 0px;
   }
+
   .backend-descript p:first-child {
     font-size: 18px;
     font-weight: 500;
   }
-  .logo-node div {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 10px 0px;
+
+  /* Slider */
+  div.mobile-slider.slider {
+    width: 70%;
   }
-  .logo-node p {
-    margin: 0px 0px 10px 0px;
-  }
-  .logo-node.all div div:first-child {
-    width: 216px;
-    height: 216px;
-  }
-  .logo-node div div:first-child {
-    width: 216px;
-  }
-  .logo-node div div:nth-child(2) {
-    width: 138px;
+
+  div.mobile-slider.slider .slick-slide {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
   }
-  .logo-node div div:nth-child(2) p:nth-child(2) {
+
+  div.mobile-slider.slider .slick-slide p:last-child {
     font-size: 16px;
+    margin: 15px 0px 10px 0px;
   }
-  
+
+  .mobile-slider p:nth-child(2) {
+    font-size: 24px;
+  }
+
+  div.mobile-slider.slider .slick-dots li button:before {
+    color: white;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 30%;
+  }
+
+  .slick-dots {
+    font-size: 5px;
+  }
+
+  .slick-dots li {
+    margin: 0px;
+  }
+
+  .slick-dots li.slick-active button:before {
+    font-size: 10px;
+    top: 1px;
+  }
 }
