@@ -139,7 +139,7 @@
 }
 .outsorsing-descript h2 {
   font-size: 48px;
-  margin: 80px 0px 50px 0px;
+  margin: 80px 0px;
 }
 .outsorsing-descript p {
   font-size: 36px;
@@ -152,7 +152,7 @@
   }
   .outsorsing-descript h2 {
     font-size: 24px;
-    margin: 50px 0px 10px 0px;
+    margin: 50px 0px 30px 0px;
   }
   .outsorsing-descript section:nth-child(2) h2 {
     margin: 30px 0px 30px 0px;
