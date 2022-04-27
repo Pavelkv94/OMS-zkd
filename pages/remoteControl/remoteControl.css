@@ -203,17 +203,7 @@
   height: 600px;
 }
 
-.desktop-img-one {
-  /* width: 476px; */
-  /* height: 480px; */
-  /* background-color: gray; */
-}
-
 .desktop-img-two {
-  /* width: 290px; */
-  /* height: 320px; */
-  /* background-color: gray; */
-  /* border: 1px solid black; */
   top: 350px;
   left: -160px;
 }
@@ -270,9 +260,6 @@ padding: 75px 0 0 0;
 }
 
 @media screen and (min-width: 640px) {
-  /* .remote-describe section {
-    width: 1200px;
-  } */
 
   .give-keyfob-mobile {
     display: none;
