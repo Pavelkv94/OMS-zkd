@@ -71,16 +71,18 @@ footer section:first-child {
 }
 
 .footer-menu-item {
-  width: 190px;
+  width: 200px;
   margin-right: 20px;
 }
+
 .footer-menu-item a {
   text-decoration: none;
   color: white;
 }
+
 .footer-menu-item ul {
   list-style: none;
-  height: 270px;
+  max-height: 270px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -104,7 +106,8 @@ footer section:first-child {
   font-weight: 500;
 }
 
-.footer-menu ul li a:hover,  .footer-menu-item a:hover{
+.footer-menu ul li a:hover,
+.footer-menu-item a:hover {
   text-decoration: underline;
 }
 
@@ -116,7 +119,42 @@ footer section:last-child {
   color: white;
   outline: none;
   margin: 100px 0px 50px 0px;
-align-items: flex-start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    min-height: 390px;
+    padding: 0 5%;
+    align-items: flex-start;
+  }
+
+  footer section {
+    width: 100%;
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .footer-menu-item {
+    width: 280px;
+  }
+
+  footer h2 {
+    margin: 0 0 10px;
+  }
+
+  .footer-menu-item:nth-child(2) {
+    margin-top: 20px;
+  }
+
+  .footer-menu-item ul {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -124,6 +162,11 @@ align-items: flex-start;
     min-height: 390px;
     padding: 0 5%;
     align-items: flex-start;
+  }
+
+  footer h2 {
+    font-size: 16px;
+    margin: 0 0 15px;
   }
 
   footer section {
@@ -143,6 +186,7 @@ align-items: flex-start;
 
   .footer-contacts {
     width: 196px;
+    height: 130px;
   }
 
   .footer-contacts div:first-child {
@@ -157,12 +201,22 @@ align-items: flex-start;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-direction: column;
+  }
+
+  .footer-menu-item:first-child {
+    height: 270px;
+  }
+
+  .footer-menu-item:nth-child(2) {
+    margin: 0 0 15px 0;
   }
 
   .footer-menu ul {
     font-size: 16px;
-    height: 130px;
+    height: 50px;
     margin: 0px 0px 5px 0px;
+    font-weight: 300;
   }
 
   .footer-contacts button {
@@ -178,6 +232,9 @@ align-items: flex-start;
     height: 46px;
     color: white;
     font-size: 12px;
+    margin-top: 15px;
+    position: absolute;
+    right: 5%;
   }
 
   .footer-logo p {
