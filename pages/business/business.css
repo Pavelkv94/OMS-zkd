@@ -302,7 +302,7 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 412px) {
   .logo-business.all div div:first-child {
     margin: 5px;
   }

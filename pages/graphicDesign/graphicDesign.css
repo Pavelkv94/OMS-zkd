@@ -240,7 +240,7 @@
     top: 1px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 412px) {
     .logo-design.all div div:first-child {
         width: 200px;
         height: 200px;
