@@ -85,14 +85,12 @@ nav ul>li {
   justify-content: center;
 }
 
-nav ul>.submenu-link:nth-child(2) {
-  width: 250px;
+nav ul>.submenu-link:nth-child(2), nav ul>.submenu-link:nth-child(2) .submenu, nav ul>.submenu-link:nth-child(1), nav ul>.submenu-link:nth-child(1) .submenu li{
+  width: 230px;
 }
-
-nav ul>.submenu-link:nth-child(2) .submenu {
-  width: 250px;
+nav ul>.submenu-link:nth-child(1) .submenu li {
+  min-height: 44px;
 }
-
 nav ul>.submenu-link:nth-child(2) .submenu li {
   width: 100%;
 }

@@ -281,7 +281,7 @@
 
   .slick-prev,
   .slick-next {
-    top: 30%;
+    top: 50%;
   }
 
   div.benefits-block-mobile.slider .slick-dots li button:before {

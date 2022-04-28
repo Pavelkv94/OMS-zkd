@@ -382,7 +382,10 @@
   .slick-next {
     top: 30%;
   }
-
+  .white-slick-prev,
+  .white-slick-next {
+    top: 50%;
+  }
   .slick-dots {
     font-size: 5px;
   }
