@@ -399,3 +399,10 @@
     top: 1px;
   }
 }
+
+@media screen and (max-width: 412px) {
+  .options-block-mobile .options-radial {
+    width: 230px;
+    height: 230px;
+  }
+}
