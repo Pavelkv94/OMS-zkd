@@ -197,7 +197,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-
   .ux-descript section,
   .logo-ux,
   .reasons section {
@@ -215,7 +214,6 @@
 }
 
 @media screen and (min-width: 640px) {
-
   .mobile-img,
   .reasons-block-mobile {
     display: none;
@@ -356,5 +354,13 @@
 
   .logo-ux-item {
     width: 157px;
+  }
+
+  .reasons-radial {
+    width: 230px;
+    height: 230px;
+  }
+  div.reasons-block-mobile.slider .slick-slide p {
+    font-size: 22px;
   }
 }
