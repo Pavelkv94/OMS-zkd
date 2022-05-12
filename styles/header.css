@@ -219,7 +219,10 @@ ul li a,
     display: none;
   }
 }
-
+@media screen and (max-width: 880px) {
+nav ul>.submenu-link:nth-child(2), nav ul>.submenu-link:nth-child(2) .submenu, nav ul>.submenu-link:nth-child(1), nav ul>.submenu-link:nth-child(1) .submenu li{
+  width: 190px;
+}}
 @media screen and (max-width: 800px) {
   header:nth-child(2) {
     display: flex;
@@ -231,7 +234,7 @@ ul li a,
     /* background-color: #414141; */
     position: absolute;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     min-width: 375px;
   }
 
