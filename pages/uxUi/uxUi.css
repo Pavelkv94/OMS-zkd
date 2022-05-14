@@ -67,7 +67,9 @@
     max-width: 340px;
   }
 }
-
+div.ux-block {
+  width: 90%;
+}
 /* Second Block */
 .ux-descript {
   background: white;
@@ -280,13 +282,14 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    margin: 15px 10px;
     /* align-items: center;
     justify-content: center; */
   }
 
   .ux-item div {
-    width: 216px;
-    height: 216px;
+    width: 200px;
+    height: 200px;
     margin: 0;
   }
 
@@ -362,5 +365,8 @@
   }
   div.reasons-block-mobile.slider .slick-slide p {
     font-size: 22px;
+  }
+  .logo-ux {
+    justify-content: space-between;
   }
 }

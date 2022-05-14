@@ -135,7 +135,6 @@
         width: 90%;
     }
     .logo-design {
-
     }
 }
 
@@ -148,16 +147,15 @@
         flex-direction: column;
         align-items: center;
     }
-    .mobile-img, .branding.slider {
+    .mobile-img,
+    .branding.slider {
         display: none;
     }
 }
 
 @media screen and (max-width: 640px) {
-
     .design-descript section {
         width: 100%;
-
     }
     .design-descript h2 {
         font-size: 24px;
@@ -173,14 +171,20 @@
         font-size: 18px;
         font-weight: 500;
     }
+    .logo-design.all {
+        width: 90%;
+    }
+    .logo-design-item {
+        margin: 15px 0;
+    }
     .logo-design div {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 10px 0px;
     }
-    .desktop-img, .branding.desktop {
+    .desktop-img,
+    .branding.desktop {
         display: none;
     }
     .logo-design p {
@@ -199,50 +203,54 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        margin-left: 10px;
     }
     .logo-design div div:nth-child(2) p:nth-child(2) {
         font-size: 16px;
     }
     /* Slider */
-  div.branding.slider {
-    width: 70%;
-  }
+    div.branding.slider {
+        width: 70%;
+    }
 
-  div.branding.slider .slick-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    div.branding.slider .slick-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  div.branding.slider .slick-slide p:last-child {
-    font-size: 24px;
-    margin: 15px 0px 10px 0px;
-  }
-  .branding p:nth-child(2) {
-    font-size: 24px;
-  }
+    div.branding.slider .slick-slide p:last-child {
+        font-size: 24px;
+        margin: 15px 0px 10px 0px;
+    }
+    .branding p:nth-child(2) {
+        font-size: 24px;
+    }
 
-  .slick-prev,
-  .slick-next {
-    top: 40%;
-  }
+    .slick-prev,
+    .slick-next {
+        top: 40%;
+    }
 
-  .slick-dots {
-    font-size: 5px;
-  }
+    .slick-dots {
+        font-size: 5px;
+    }
 
-  .slick-dots li {
-    margin: 0px;
-  }
+    .slick-dots li {
+        margin: 0px;
+    }
 
-  .slick-dots li.slick-active button:before {
-    font-size: 10px;
-    top: 1px;
-  }
+    .slick-dots li.slick-active button:before {
+        font-size: 10px;
+        top: 1px;
+    }
 }
 @media screen and (max-width: 412px) {
     .logo-design.all div div:first-child {
         width: 200px;
         height: 200px;
+    }
+    .logo-design div div:nth-child(2) p:nth-child(2) {
+        font-size: 14px;
     }
 }

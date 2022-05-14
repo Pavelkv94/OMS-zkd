@@ -23,7 +23,7 @@ body {
 .to-up-mobile {
   position: fixed;
   bottom: 70px;
-  right: 50px;
+  right: 5%;
   display: none;
   z-index: 22;
   cursor: pointer;

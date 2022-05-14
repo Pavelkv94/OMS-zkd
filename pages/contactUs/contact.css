@@ -123,8 +123,6 @@ header:first-child {
   }
 
   .contact-us section {
-    width: 374px;
-    min-width: 374px;
     display: flex;
     flex-direction: column;
     align-items: center;

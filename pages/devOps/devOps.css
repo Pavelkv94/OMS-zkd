@@ -159,6 +159,9 @@
         font-size: 18px;
         font-weight: 500;
     }
+    .processes {
+        width: 90%;
+    }
     .processes div {
         width: 100%;
         display: flex;
@@ -170,8 +173,8 @@
         margin: 0px 0px 10px 0px;
     }
     .processes.all div div:first-child {
-        width: 216px;
-        height: 216px;
+        width: 200px;
+        height: 200px;
     }
     .processes div div:first-child {
         width: 216px;
@@ -182,6 +185,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        margin-left: 10px;
     }
     .processes div div:nth-child(2) p:nth-child(2) {
         font-size: 16px;

@@ -269,7 +269,9 @@
     flex-direction: column;
     width: 100%;
   }
-
+  .ruby-item, .node-item {
+    margin: 15px 0px;
+  }
   .ruby-item,
   .node-item {
     width: 100%;
@@ -280,9 +282,9 @@
 
   .ruby-item div,
   .node-item div {
-    width: 216px;
-    height: 216px;
-    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0px;
   }
 
   .ruby-item p,

@@ -237,9 +237,11 @@ nav ul>.submenu-link:nth-child(2), nav ul>.submenu-link:nth-child(2) .submenu, n
     width: 100%;
     min-width: 375px;
   }
-
+  header:nth-child(2) div {
+    margin: 0 5%;
+  }
   header:nth-child(2) div img {
-    margin: 7px 23px;
+    margin: 7px 0;
   }
 
   .menu-btn {

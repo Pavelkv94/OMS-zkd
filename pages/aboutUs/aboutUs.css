@@ -87,13 +87,10 @@
   margin: 50px 0px;
 }
 /* ! FAKE IMG ---------------------- */
-.fake-img {
+.code {
   width: 575px;
-  height: 378px;
-  background-color: gray;
 }
 
-/* ! FAKE IMG ---------------------- */
 .about-us .contact-btn button {
   background: #222222;
   color: white;
@@ -129,12 +126,18 @@ margin: 0px 0px 80px 0px;
 .about-us section {
   width: 90%;
 }
+
+}
+@media screen and (max-width: 1000px){
+  .about-us section:nth-child(3) div.code {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 640px) {
   .about-us section:nth-child(3) div {
     width: 575px;
   }
-  .about-us section:nth-child(3) .contact-btn-mobile {
+  .about-us section:nth-child(3) .contact-btn-mobile, .img-mobile {
     display: none;
   }
 }
@@ -159,11 +162,11 @@ margin: 0px 0px 80px 0px;
   .about-us section:nth-child(3) div p {
     margin: 10px 0px;
   }
-  .fake-img {
-    width: 375px;
-    height: 358px;
+  .about-us section:nth-child(3) div.code {
+    width: 100%;
+    margin-right: 0;
   }
-  .about-us section:nth-child(3) div .contact-btn {
+  .about-us section:nth-child(3) div .contact-btn, .img-desktop {
     display: none;
   }
   .about-us section:nth-child(3) {
