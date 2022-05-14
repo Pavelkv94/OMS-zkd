@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "ZzzFont";
+    src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"),
+        url("../../assets/fonts/Zzz.otf");
+}
+/* First Block */
+.devops-main {
+    background-color: #222222;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+#zakodixnet_canvas {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+.title {
+    font-family: "ZzzFont";
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 125%;
+    font-style: normal;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 560px;
+}
+.title h1,
+.devops-descript h2,
+.contact-us h4 {
+    font-family: "ZzzFont";
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 125%;
+    font-style: normal;
+    text-align: center;
+}
+@media screen and (max-width: 640px) {
+    .title h1 {
+        font-size: 36px;
+        margin: 80px 0px;
+    }
+    .title h1:first-child {
+        max-width: 320px;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 340px;
+    }
+}
+
+/* Second Block */
+.devops-descript {
+    background: white;
+    width: 100%;
+    min-height: 840px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.devops-descript section {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.devops-descript h2 {
+    font-size: 48px;
+    margin: 80px 0px 50px 0px;
+}
+.devops-descript p {
+    font-size: 36px;
+    margin: 0px;
+}
+.processes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.processes p {
+    margin: 10px 0px;
+    max-width: 277px;
+}
+.processes p:first-child {
+    font-weight: 500;
+}
+.processes div div:first-child {
+    width: 277px;
+    height: 277px;
+    background: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.processes div div img {
+    width: 130px;
+    height: 130px;
+}
+.processes div div:nth-child(2) p:nth-child(2) {
+    font-size: 24px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.team p {
+    margin: 20px 0px;
+    font-weight: 500;
+}
+@media screen and (max-width: 1220px) {
+    .devops-descript section {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 640px) {
+    div.team.slider {
+        display: none;
+    }
+    .team div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .devops-descript section {
+        width: 100%;
+
+    }
+    .devops-descript h2 {
+        font-size: 24px;
+        margin: 50px 0px 10px 0px;
+    }
+    .devops-descript section:nth-child(2) h2 {
+        margin: 30px 0px 30px 0px;
+    }
+    .devops-descript section:nth-child(3) h2 {
+        margin: 50px 0px 30px 0px;
+    }
+    .devops-descript p:first-child {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .processes {
+        width: 90%;
+    }
+    .processes div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px 0px;
+    }
+    .processes p {
+        margin: 0px 0px 10px 0px;
+    }
+    .processes.all div div:first-child {
+        width: 200px;
+        height: 200px;
+    }
+    .processes div div:first-child {
+        width: 216px;
+    }
+    .processes div div:nth-child(2) {
+        width: 138px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .processes div div:nth-child(2) p:nth-child(2) {
+        font-size: 16px;
+    }
+    div.team.desktop {
+        display: none;
+    }
+
+    /* Slider */
+    div.team.slider {
+        width: 70%;
+    }
+    div.team.slider .slick-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.team.slider .slick-slide p {
+        font-size: 24px;
+        margin: 30px 0px 10px 0px;
+    }
+    .slick-prev,
+    .slick-next {
+        top: 40%;
+    }
+    .slick-dots {
+        font-size: 5px;
+    }
+    .slick-dots li {
+        margin: 0px;
+    }
+    .slick-dots li.slick-active button:before {
+        font-size: 10px;
+        top: 1px;
+    }
+}
