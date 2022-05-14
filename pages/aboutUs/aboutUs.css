@@ -89,6 +89,8 @@
 /* ! FAKE IMG ---------------------- */
 .code {
   width: 575px;
+  background-image: url('../../assets/img/code.png');
+  background-size: cover;
 }
 
 .about-us .contact-btn button {
@@ -166,8 +168,6 @@ margin: 0px 0px 80px 0px;
     width: 100%;
     height: 230px;
     margin-right: 0;
-    background-image: url('../../assets/img/code.png');
-    background-size: cover;
   }
   .about-us section:nth-child(3) div .contact-btn, .img-desktop {
     display: none;
