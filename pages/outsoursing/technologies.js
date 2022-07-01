@@ -15,6 +15,7 @@ let symbols = [
   "CSS",
   "JS",
   "Node.js",
+  "Java",
   "Redmine",
   "Kubernetes",
   "Ruby",
@@ -31,6 +32,14 @@ let symbols = [
   ".NET",
   "TypeScript",
   "Jenkins",
+  "Project",
+  "Figma",
+  "Waterfall",
+  "Agile",
+  "Oracle DB",
+  "MSSQL DB",
+  "MySQL",
+  "PostgreSQL",
 ];
 const optsTech = {
   particleColor: "rgb(200,200,200)",

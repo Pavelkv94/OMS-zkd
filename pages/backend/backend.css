@@ -39,7 +39,7 @@
 
 .title h1,
 .backend-descript h2,
-.ruby-second h2,
+.node h2,
 .python h2,
 .contact-us h4 {
   font-family: "ZzzFont";
@@ -96,20 +96,28 @@
   margin: 0px;
 }
 
-.node-block {
+.java-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
 }
 
-.node-block p {
-  margin: 20px 0px;
+.java-block p {
   max-width: 377px;
-  text-align: center;
+  text-align: left;
 }
-
-.node-item div {
+.java-item {
+  margin-bottom: 30px;
+}
+.java-item p:nth-child(2) {
+  margin: 20px 0 15px 0;
+  font-size: 32px;
+}
+.java-item p:nth-child(3) {
+font-weight: 400;
+}
+.java-item div {
   width: 377px;
   height: 377px;
   background: #222222;
@@ -120,7 +128,7 @@
   color: white;
 }
 
-.node-block div div:nth-child(2) p:nth-child(2) {
+.java-block div div:nth-child(2) p:nth-child(2) {
   font-size: 24px;
 }
 
@@ -154,8 +162,8 @@
   margin-bottom: 20px;
 }
 
-/* ruby-second */
-.ruby-second,
+/* node */
+.node,
 .python {
   background: #222222;
   width: 100%;
@@ -165,12 +173,12 @@
   padding-bottom: 80px;
 }
 
-.ruby-second h2,
+.node h2,
 .python h2 {
   font-size: 48px;
 }
 
-.ruby-second section,
+.node section,
 .python section {
   width: 1200px;
   display: flex;
@@ -232,7 +240,7 @@
 @media screen and (max-width: 1210px) {
 
   .backend-descript section,
-  .ruby-second section,
+  .node section,
   .python section {
     width: 90%;
   }
@@ -245,7 +253,6 @@
 
 @media screen and (min-width: 640px) {
 
-  .mobile-img,
   .mobile-slider {
     display: none;
   }
@@ -253,7 +260,6 @@
 
 @media screen and (max-width: 640px) {
 
-  .desktop-img,
   .ruby-desktop-block,
   .python-desktop-block {
     display: none;
@@ -265,31 +271,48 @@
   }
 
   .ruby-block,
-  .node-block {
+  .java-block {
     flex-direction: column;
     width: 100%;
   }
-  .ruby-item, .node-item {
+  .ruby-item  {
     margin: 15px 0px;
   }
-  .ruby-item,
-  .node-item {
+  .ruby-item  {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
-
-  .ruby-item div,
-  .node-item div {
+  .ruby-item div {
     width: 200px;
     height: 200px;
     margin-bottom: 0px;
   }
-
-  .ruby-item p,
-  .node-item p {
-    width: 138px;
+  .java-item {
+    margin-bottom: 20px;
+  }
+  .java-item div {
+    width: 100%;
+    height: 370px;
+  }
+  .java-item p:nth-child(2) {
+    margin: 10px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 125.6%;
+  }
+  .java-item p:nth-child(3) {
+    width: 100%;
+    margin: 0;
+  }
+  .java-item p {
+    width: 100%; 
+  }
+  .ruby-item p  {
+    width: 138px;}
+  .ruby-item p, .java-item p  {
     margin-left: 10px;
     font-style: normal;
     font-weight: 400;
@@ -299,14 +322,14 @@
     align-self: center;
   }
 
-  .ruby-second,
+  .node,
   .python {
     padding: 0;
     margin-bottom: 20px;
   }
 
   .backend-descript h2,
-  .ruby-second h2,
+  .node h2,
   .python h2 {
     font-size: 24px;
     margin: 50px 0px 30px 0px;

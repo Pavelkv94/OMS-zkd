@@ -67,9 +67,7 @@
     max-width: 340px;
   }
 }
-div.ux-block {
-  width: 90%;
-}
+
 /* Second Block */
 .ux-descript {
   background: white;
@@ -216,7 +214,6 @@ div.ux-block {
 }
 
 @media screen and (min-width: 640px) {
-  .mobile-img,
   .reasons-block-mobile {
     display: none;
   }
@@ -252,7 +249,6 @@ div.ux-block {
     display: flex;
   }
 
-  .desktop-img,
   .reasons-block-desktop {
     display: none;
   }

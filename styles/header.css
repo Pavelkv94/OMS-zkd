@@ -91,6 +91,9 @@ nav ul>.submenu-link:nth-child(2), nav ul>.submenu-link:nth-child(2) .submenu, n
 nav ul>.submenu-link:nth-child(1) .submenu li {
   min-height: 44px;
 }
+nav ul>.submenu-link:nth-child(1) .submenu li:last-child {
+  min-height: 70px;
+}
 nav ul>.submenu-link:nth-child(2) .submenu li {
   width: 100%;
 }
