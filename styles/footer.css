@@ -205,11 +205,12 @@ footer section:last-child {
   }
 
   .footer-menu-item:first-child {
-    height: 270px;
+    height: 306px;
   }
 
   .footer-menu-item:nth-child(2) {
     margin: 0 0 15px 0;
+    height: 120px;
   }
 
   .footer-menu ul {

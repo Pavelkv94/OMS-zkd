@@ -147,7 +147,6 @@
         flex-direction: column;
         align-items: center;
     }
-    .mobile-img,
     .branding.slider {
         display: none;
     }
@@ -183,7 +182,6 @@
         flex-direction: row;
         justify-content: space-around;
     }
-    .desktop-img,
     .branding.desktop {
         display: none;
     }
