@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "ZzzFont";
+    src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"),
+        url("../../assets/fonts/Zzz.otf");
+}
+/* First Block */
+.design-main {
+    background-color: #222222;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+#zakodixnet_canvas {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+.title {
+    font-family: "ZzzFont";
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 125%;
+    font-style: normal;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+.title h1,
+.design-descript h2,
+.contact-us h4 {
+    font-family: "ZzzFont";
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 125%;
+    font-style: normal;
+    text-align: center;
+}
+@media screen and (max-width: 640px) {
+    .title h1 {
+        font-size: 36px;
+        margin: 80px 0px;
+    }
+    .title h1:first-child {
+        max-width: 320px;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 340px;
+    }
+}
+
+/* Second Block */
+.design-descript {
+    background: white;
+    width: 100%;
+    min-height: 840px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.design-descript section {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.design-descript section:last-child {
+    margin-bottom: 80px;
+}
+.design-descript h2 {
+    font-size: 48px;
+    margin: 80px 0px 50px 0px;
+}
+.design-descript p {
+    font-size: 32px;
+    margin: 0px;
+}
+.logo-design {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.logo-design p {
+    margin: 20px 0px;
+    max-width: 377px;
+}
+.logo-design p:first-child {
+    font-weight: 500;
+}
+.logo-design div div:first-child {
+    width: 377px;
+    height: 377px;
+    background: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-design div div:nth-child(2) p:nth-child(2) {
+    font-size: 24px;
+}
+
+.branding {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.branding p {
+    margin: 20px 0 0 0;
+    font-weight: 500;
+}
+
+.radial {
+    width: 250px;
+    height: 250px;
+    background-color: #222222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1214px) {
+    .design-descript section {
+        width: 90%;
+    }
+    .logo-design {
+    }
+}
+
+@media screen and (min-width: 640px) {
+    div.branding.slider {
+        display: none;
+    }
+    .branding div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .branding.slider {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .design-descript section {
+        width: 100%;
+    }
+    .design-descript h2 {
+        font-size: 24px;
+        margin: 50px 0px 10px 0px;
+    }
+    .design-descript section:last-child {
+        margin-bottom: 50px;
+    }
+    .design-descript section:nth-child(2) h2 {
+        margin: 30px 0px 30px 0px;
+    }
+    .design-descript section:nth-child(3) h2 {
+        margin: 50px 0px 30px 0px;
+    }
+    .design-descript p:first-child {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .logo-design.all {
+        width: 90%;
+    }
+    .logo-design-item {
+        margin: 15px 0;
+    }
+    .logo-design div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .branding.desktop {
+        display: none;
+    }
+    .logo-design p {
+        margin: 0px 0px 10px 0px;
+    }
+    .logo-design.all div div:first-child {
+        width: 216px;
+        height: 216px;
+    }
+    .logo-design div div:first-child {
+        width: 216px;
+    }
+    .logo-design div div:nth-child(2) {
+        width: 138px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    .logo-design div div:nth-child(2) p:nth-child(2) {
+        font-size: 16px;
+    }
+    /* Slider */
+    div.branding.slider {
+        width: 70%;
+    }
+
+    div.branding.slider .slick-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.branding.slider .slick-slide p:last-child {
+        font-size: 24px;
+        margin: 15px 0px 10px 0px;
+    }
+    .branding p:nth-child(2) {
+        font-size: 24px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 40%;
+    }
+
+    .slick-dots {
+        font-size: 5px;
+    }
+
+    .slick-dots li {
+        margin: 0px;
+    }
+
+    .slick-dots li.slick-active button:before {
+        font-size: 10px;
+        top: 1px;
+    }
+}
+@media screen and (max-width: 412px) {
+    .logo-design.all div div:first-child {
+        width: 200px;
+        height: 200px;
+    }
+    .logo-design div div:nth-child(2) p:nth-child(2) {
+        font-size: 14px;
+    }
+}
