@@ -72,4 +72,4 @@ function check() {
   //   }
   // }
 
-  const callback = () => {alert('callback')}
+ function callback() {alert('callback')}
