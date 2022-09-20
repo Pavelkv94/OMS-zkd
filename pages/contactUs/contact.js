@@ -48,3 +48,14 @@ function check() {
     });
   }
   form.addEventListener("submit", handleSubmit)
+
+
+
+
+  //CAPTCHA
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+  var verifyCallback = function(response) {
+    alert(response);
+  };

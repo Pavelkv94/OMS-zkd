@@ -140,7 +140,7 @@ header:first-child {
 }
 .contact-form {
     width: 575px;
-    height: 593px;
+    min-height: 593px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,7 +276,7 @@ header:first-child {
     }
     .contact-form {
         width: 374px;
-        height: 427px;
+        min-height: 427px;
         border-radius: 20px;
     }
     .contact-form form input,
