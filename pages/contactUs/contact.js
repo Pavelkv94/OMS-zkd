@@ -53,9 +53,11 @@ function check() {
 
 
   //CAPTCHA
-  var onloadCallback = function() {
-    alert("grecaptcha is ready!");
-  };
-  var verifyCallback = function(response) {
-    alert(response);
-  };
+  // var onloadCallback = function() {
+  //   alert("grecaptcha is ready!");
+  // };
+  // var verifyCallback = function(response) {
+  //   alert(response);
+  // };
+
+  const callback = () => {alert('callback')}
