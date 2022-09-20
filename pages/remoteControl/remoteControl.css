@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "ZzzFont";
+  src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"),
+    url("../../assets/fonts/Zzz.otf");
+}
+
+/* First Block */
+.remote-main {
+  background-color: #222222;
+  color: white;
+  width: 90%;
+  min-height: calc(100vh - 75px);
+  padding: 75px 0 0 10%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.remote-main img {
+  height: 100%;
+}
+
+.title {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1 {
+  max-width: 514px;
+  text-align: left;
+  align-self: center;
+  align-self: flex-start;
+}
+
+.title h2 {
+  align-self: flex-end;
+}
+
+.title h2,
+.start-car-mobile {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 125.6%;
+  max-width: 357px;
+  margin: 200px 20px 70px 20px;
+  align-self: flex-end;
+}
+
+.title h1,
+.remote-describe h2 {
+  font-family: "ZzzFont";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 125%;
+  font-style: normal;
+}
+
+
+@media screen and (max-width: 1080px) {
+  .remote-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0 0 0;
+  }
+
+  .remote-main img {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .title h1 {
+    text-align: center;
+    align-self: center;
+  }
+
+  .title h2 {
+    display: none;
+  }
+
+  .start-car-mobile {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0;
+  }
+
+  .start-car-mobile h2 {
+    width: 80%;
+    font-family: Roboto, sans-serif;
+
+    font-weight: normal;
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .start-car-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .remote-main {
+    flex-direction: column;
+    left: 0;
+    padding-top: 50px;
+    min-height: 100%;
+    align-items: center;
+  }
+
+  .remote-main .title h2 {
+    display: none;
+  }
+
+  .remote-main h2 {
+    margin: 30px 20px;
+  }
+
+  .title h1 {
+    font-size: 36px;
+    margin: 40px 0px 20px 0px;
+    min-width: 300px;
+    text-align: center;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 340px;
+  }
+
+  .start-car-mobile h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 125%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .remote-main img {
+    object-fit: cover;
+    height: 500px;
+  }
+}
+
+/* Second Block */
+.remote-describe {
+  background: white;
+  width: 100%;
+  min-height: 840px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.remote-describe h2 {
+  text-align: center;
+  margin: 80px 0px 50px 0px;
+}
+
+.remote-describe section:first-child {
+  max-width: 878px;
+}
+
+.remote-describe section:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.give-keyfob {
+  max-width: 800px;
+}
+
+.remote-describe section:nth-child(2) div:first-child p:nth-child(2) {
+  text-align: right;
+}
+
+.remote-describe section:nth-child(2) div:nth-child(2) {
+  position: relative;
+}
+
+.remote-describe section:nth-child(2) div:nth-child(2) div {
+  position: absolute;
+}
+
+.desktop-images {
+  width: 540px;
+  height: 600px;
+}
+
+.desktop-img-two {
+  top: 350px;
+  left: -160px;
+}
+
+.remote-describe h2 {
+  font-size: 48px;
+}
+
+.remote-describe p {
+  font-size: 36px;
+  margin: 0px 20px 20px 0px;
+}
+
+.remote-describe p:first-child {
+  max-width: 570px;
+}
+
+.remote-describe section:nth-child(3) {
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .remote-main {
+padding: 75px 0 0 0;
+    width: 100%;
+  }
+
+  .remote-describe section:nth-child(2) {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .desktop-images {
+    height: 500px;
+  }
+
+  .desktop-img-one {
+    right: 0;
+  }
+
+  .desktop-img-two {
+    top: 250px;
+    left: -20px;
+  }
+
+  .desktop-img-one img {
+    width: 400px;
+  }
+
+  .desktop-img-two img {
+    width: 250px;
+
+  }
+}
+
+@media screen and (min-width: 640px) {
+
+  .give-keyfob-mobile {
+    display: none;
+  }
+
+  .mobile-images {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .remote-main {
+    width: 100%;
+    padding: 75px 0 0 0;
+  }
+
+  .remote-describe {
+    min-height: 750px;
+  }
+
+  .remote-describe h2,
+  .remote-main h2 {
+    font-size: 24px;
+  }
+
+  .remote-describe h2 {
+    margin: 50px 0px 30px 0px;
+  }
+
+  .remote-describe p {
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .desktop-images {
+    display: none;
+  }
+
+  .mobile-images {
+    width: 100%;
+    min-height: 550px;
+    position: relative;
+  }
+
+  .mobile-img-one {
+    position: absolute;
+    left: 0;
+  }
+  .remote-describe section:nth-child(2) div:nth-child(2) {
+    position: absolute;
+    top: 280px;
+    right: 0;
+  }
+
+  .give-keyfob {
+    display: none;
+  }
+
+  .remote-describe section .give-keyfob-mobile p {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+  }
+
+  .desktop-images {
+    width: 350px;
+    height: 500px;
+  }
+}
