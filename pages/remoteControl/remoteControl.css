@@ -60,6 +60,12 @@
   font-style: normal;
 }
 
+.about-us .contact-btn button {
+  background: #222222;
+  color: white;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
 
 @media screen and (max-width: 1080px) {
   .remote-main {
@@ -183,7 +189,7 @@
 }
 
 .give-keyfob {
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .remote-describe section:nth-child(2) div:first-child p:nth-child(2) {

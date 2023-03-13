@@ -59,3 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+function setCopyYear() {
+    const copy = document.getElementById('copyright');
+    const currentYear = new Date();
+    copy.innerHTML = `Copyright © ${currentYear.getFullYear()} Zakodix Tech Group LLC. All rights reserved.`
+  }
+  setCopyYear();
