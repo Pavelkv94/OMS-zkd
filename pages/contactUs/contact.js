@@ -1,7 +1,7 @@
 function check() {
     let chbox = document.getElementById('agree')
     let btn = document.getElementById("agree-btn");
- 
+
     if (chbox.checked == false){
         btn.style.opacity = "0.7";
         btn.disabled = true;
@@ -18,6 +18,7 @@ function check() {
     let btn = document.getElementById("agree-btn");
     var status = document.getElementById("status");
     let data = new FormData(event.target);
+
     fetch(event.target.action, {
       method: form.method,
       body: data,
@@ -47,10 +48,21 @@ function check() {
       status.innerHTML = "Oops! There was a problem submitting your form"
     });
   }
-  form.addEventListener("submit", handleSubmit);
 
 
 //Captcha
+let captcha = document.querySelector('.captcha-wrapper');
 
-function checkRecaptcha() {alert('callback')}
+captcha.addEventListener("click", () => captcha.style.display = 'none');
 
+function openRecaptcha() {
+  captcha.style.display = 'flex'
+}
+
+function checkRecaptcha() {
+let btn = document.getElementById("submit-btn");
+btn.click();
+captcha.style.display = 'none'
+}
+
+form.addEventListener("submit", handleSubmit);

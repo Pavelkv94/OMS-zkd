@@ -140,7 +140,7 @@ header:first-child {
 }
 .contact-form {
     width: 575px;
-    height: 593px;
+    min-height: 593px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,4 +319,15 @@ header:first-child {
         max-width: 374px;
         line-height: 16px;
     }
+}
+
+.captcha-wrapper {
+    /* display: flex !important; */
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0,0,0, 0.5);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
 }

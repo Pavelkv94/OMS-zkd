@@ -22,6 +22,7 @@
       href="../../assets/img/svg/iconb.svg"
       type="image/svg"
     />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Zakodix Tech Group</title>
   </head>
   <body>
@@ -138,8 +139,14 @@
               <input type="email" name="email" placeholder="Your email.">
               <textarea name="message" placeholder="Your question or idea." rows="10" ></textarea>
               <div class="contact-form-agree"><input type="checkbox" id="agree" onclick="check()"/> <p>I consent to the transfer of my data solely for the purpose of communicating my application.</p></div>
-              <div class="g-recaptcha" style="display: none;" data-sitekey="6LdqhBMiAAAAAAr4Q3bm10DRGzq9b58f6CUEpFnT" data-theme="light" data-callback="checkRecaptcha"></div> 
-              <button type="submit" class="white-button agree-btn" id="agree-btn" disabled="true">Send message</button>
+              <button type="button" class="white-button agree-btn" id="agree-btn" disabled="true" onclick="openRecaptcha()">Send message</button>
+              <button 
+                  type="submit" 
+                  style="display: none;"
+                  id="submit-btn" 
+                  >
+                  Send message
+                </button>
                 <p style="display: none;" id="status"></p>
               </form>
 
@@ -194,9 +201,12 @@
         </section>
         <section id="copyright"></section>
       </footer>
+      <div class="captcha-wrapper" style="display: none"> 
+        <div class="g-recaptcha"  data-sitekey="6LfZRf0kAAAAACb7O5aNiKL9LnJOdM_k-ChpgQLU" data-theme="light" data-callback="checkRecaptcha"></div> 
+      </div>
     </div>
 
-    <script type="text/javascript" src="../../scripts/common.js"></script>
+  <script type="text/javascript" src="../../scripts/common.js"></script>
 	<script type="text/javascript" src="../../scripts/contact.js"></script>
   <script type="text/javascript" src="./contact.js"></script>
   </body>
