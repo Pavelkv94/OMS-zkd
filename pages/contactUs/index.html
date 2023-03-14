@@ -70,8 +70,8 @@
         </div>
       </header>
                   
-      <a class="to-up"><img src="../../assets/img/buttons/button up.svg"/></a>
-      <a class="to-up-mobile"><img src="../../assets/img/buttons/buttonUpMobile.svg" /></a>
+      <div class="to-up"><img src="../../assets/img/buttons/button up.svg"/></div>
+      <div class="to-up-mobile"><img src="../../assets/img/buttons/buttonUpMobile.svg" /></div>
       
       <div class="menu">
         <ul>
@@ -135,7 +135,8 @@
               <input type="email" name="email" placeholder="Your email.">
               <textarea name="message" placeholder="Your question or idea." rows="10" ></textarea>
               <div class="contact-form-agree"><input type="checkbox" id="agree" onclick="check()"/> <p>I consent to the transfer of my data solely for the purpose of communicating my application.</p></div>
-                <button type="submit" class="white-button agree-btn" id="agree-btn" disabled="true">Send message</button>
+              <div class="g-recaptcha" style="display: none;" data-sitekey="6LdqhBMiAAAAAAr4Q3bm10DRGzq9b58f6CUEpFnT" data-theme="light" data-callback="checkRecaptcha"></div> 
+              <button type="submit" class="white-button agree-btn" id="agree-btn" disabled="true">Send message</button>
                 <p style="display: none;" id="status"></p>
               </form>
 

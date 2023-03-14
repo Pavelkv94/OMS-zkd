@@ -47,4 +47,10 @@ function check() {
       status.innerHTML = "Oops! There was a problem submitting your form"
     });
   }
-  form.addEventListener("submit", handleSubmit)
+  form.addEventListener("submit", handleSubmit);
+
+
+//Captcha
+
+function checkRecaptcha() {alert('callback')}
+

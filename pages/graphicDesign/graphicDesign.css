@@ -137,8 +137,6 @@
     .design-descript section {
         width: 90%;
     }
-    .logo-design {
-    }
 }
 
 @media screen and (min-width: 640px) {
@@ -258,3 +256,29 @@
         font-size: 14px;
     }
 }
+
+.carousel-container {
+    margin: auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+.carousel-container .center .slick-list .slick-track .slick-slide img {
+    max-width: 1000px;
+    margin: 0 10px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+
+@media screen and (max-width: 1214px) {
+    .carousel-container .center .slick-list .slick-track .slick-slide img {
+        height: 450px;
+    }
+}
+/* сделать дргой частьтю кода */
+/* @media screen and (max-width: 1000px) {
+    .carousel-container .center .slick-list .slick-track .slick-slide img {
+        height: 350px;
+        margin: 0;
+    }
+} */
