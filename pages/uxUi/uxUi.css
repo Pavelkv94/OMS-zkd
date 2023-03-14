@@ -40,6 +40,7 @@
 .title h1,
 .ux-descript h2,
 .reasons h2,
+.solutions h2,
 .python h2,
 .contact-us h4 {
   font-family: "ZzzFont";
@@ -88,7 +89,7 @@
 
 .ux-descript h2 {
   font-size: 48px;
-  margin: 80px 0px 50px 0px;
+  margin: 60px 0px 50px 0px;
 }
 
 .ux-descript p {
@@ -159,6 +160,7 @@
 
 .reasons h2 {
   font-size: 48px;
+  margin: 80px 0 50px 0;
 }
 
 .reasons section {
@@ -224,7 +226,9 @@
     width: 100%;
     margin-bottom: 30px;
   }
-
+  .reasons-radial p {
+    font-size: 22px;
+  }
   .ux-descript h2,
   .reasons h2 {
     font-size: 24px;
@@ -365,4 +369,104 @@
   .logo-ux {
     justify-content: space-between;
   }
+}
+
+.solutions {
+  background: white;
+}
+
+.solutions h2 {
+  font-size: 48px;
+  margin: 80px 0 50px 0;
+}
+
+.contact-us h2 {
+  font-size: 48px;
+  margin: 50px 0 40px 0;
+  font-family: "ZzzFont";
+  font-weight: 500;
+  line-height: 125%;
+}
+
+.carousel-container {
+  margin: auto;
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+.carousel-container .center .slick-list .slick-track .slick-slide img {
+  max-width: 1000px;
+  margin: 0 10px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+
+@media screen and (max-width: 1214px) {
+  .carousel-container {
+    display: none;
+  }
+  .carousel-container-mobile {
+    max-width: 800px;
+  }
+  .carousel-container-mobile .single-item .slick-list {
+    max-width: 800px;
+  }
+  .carousel-container-mobile .single-item .slick-list .slick-track .slick-slide img {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .carousel-container-mobile {
+    max-width: 600px;
+  }
+  .carousel-container-mobile .single-item .slick-list {
+    max-width: 600px;
+  }
+  .carousel-container-mobile .single-item .slick-list .slick-track .slick-slide img {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .carousel-container-mobile {
+    max-width: 400px;
+  }
+  .carousel-container-mobile .single-item .slick-list {
+    max-width: 400px;
+  }
+  .carousel-container-mobile .single-item .slick-list .slick-track .slick-slide img {
+    max-width: 400px;
+  }
+  .solutions section h2,
+  .contact-us h2 {
+    font-size: 24px;
+    margin: 50px 0px 30px 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .carousel-container-mobile {
+    max-width: 300px;
+  }
+  .carousel-container-mobile .single-item .slick-list {
+    max-width: 300px;
+  }
+  .carousel-container-mobile .single-item .slick-list .slick-track .slick-slide img {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1214px) {
+  .carousel-container-mobile {
+    display: none;
+  }
+}
+.carousel-container .center .slick-list .slick-track .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-container-mobile .single-item .slick-list .slick-track .slick-slide img {
+  margin-right: 10px;
 }
