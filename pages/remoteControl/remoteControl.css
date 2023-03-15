@@ -165,11 +165,9 @@
 .remote-describe {
   background: white;
   width: 100%;
-  min-height: 840px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
 }
 
 .remote-describe h2 {
@@ -203,7 +201,9 @@
 .remote-describe section:nth-child(2) div:nth-child(2) div {
   position: absolute;
 }
-
+.remote-describe section:last-child {
+  margin-bottom: 50px;
+}
 .desktop-images {
   width: 540px;
   height: 600px;
@@ -281,9 +281,14 @@ padding: 75px 0 0 0;
     width: 100%;
     padding: 75px 0 0 0;
   }
-
-  .remote-describe {
-    min-height: 750px;
+  .remote-describe section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .remote-describe section:last-child p {
+    width: 90%;
   }
 
   .remote-describe h2,
@@ -313,6 +318,20 @@ padding: 75px 0 0 0;
   .mobile-img-one {
     position: absolute;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 340px;
+  }
+  .caddilac-img {
+    top: 210px;
+    
+  }
+  .caddilac-img img {
+    height: 250px;
+  }
+  .mobile-img-one img {
+    width: 90%;  
   }
   .remote-describe section:nth-child(2) div:nth-child(2) {
     position: absolute;

@@ -343,7 +343,7 @@ div.approach3-item {
         max-width: 166px !important;
     }
     .upgrade-about {
-        padding-bottom: 50px;
+        padding-bottom: 50px !important;
     }
 
     .upgrade-about section p {

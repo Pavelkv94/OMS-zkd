@@ -406,6 +406,7 @@
     display: none;
   }
   .carousel-container-mobile {
+    margin: 0 auto;
     max-width: 800px;
   }
   .carousel-container-mobile .single-item .slick-list {
