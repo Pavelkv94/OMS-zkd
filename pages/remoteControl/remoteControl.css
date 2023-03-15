@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "ZzzFont";
-  src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"),
-    url("../../assets/fonts/Zzz.otf");
+  font-family: 'ZzzFont';
+  src: url('../../assets/fonts/Zzz.woff'), url('../../assets/fonts/Zzz.ttf'), url('../../assets/fonts/Zzz.otf');
 }
 
 /* First Block */
@@ -41,7 +40,7 @@
 
 .title h2,
 .start-car-mobile {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -53,7 +52,7 @@
 
 .title h1,
 .remote-describe h2 {
-  font-family: "ZzzFont";
+  font-family: 'ZzzFont';
   font-weight: 500;
   font-size: 64px;
   line-height: 125%;
@@ -105,7 +104,6 @@
     font-family: Roboto, sans-serif;
 
     font-weight: normal;
-
   }
 }
 
@@ -147,7 +145,7 @@
   }
 
   .start-car-mobile h2 {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 125%;
     text-align: center;
@@ -233,7 +231,7 @@
 
 @media screen and (max-width: 1200px) {
   .remote-main {
-padding: 75px 0 0 0;
+    padding: 75px 0 0 0;
     width: 100%;
   }
 
@@ -261,12 +259,15 @@ padding: 75px 0 0 0;
 
   .desktop-img-two img {
     width: 250px;
-
   }
 }
+@media screen and (max-width: 840px) {
+  .desktop-img-two {
+    top: 200px;
+  }
 
+}
 @media screen and (min-width: 640px) {
-
   .give-keyfob-mobile {
     display: none;
   }
@@ -314,7 +315,13 @@ padding: 75px 0 0 0;
     min-height: 550px;
     position: relative;
   }
+  .give-keyfob-mobile-images {
+    min-height: 370px;
+  }
+  .give-keyfob-mobile-images .mobile-img-one {
+    min-height: 200px;
 
+  }
   .mobile-img-one {
     position: absolute;
     left: 0;
@@ -324,14 +331,13 @@ padding: 75px 0 0 0;
     min-height: 340px;
   }
   .caddilac-img {
-    top: 210px;
-    
+    top: 160px !important;
   }
   .caddilac-img img {
-    height: 250px;
+    height: 150px;
   }
   .mobile-img-one img {
-    width: 90%;  
+    width: 90%;
   }
   .remote-describe section:nth-child(2) div:nth-child(2) {
     position: absolute;
@@ -353,4 +359,12 @@ padding: 75px 0 0 0;
     width: 350px;
     height: 500px;
   }
+  .contact-btn {
+    margin-top: 20px;
+  }
+}
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
