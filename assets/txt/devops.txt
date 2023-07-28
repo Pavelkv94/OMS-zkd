@@ -1,0 +1,361 @@
+Cloud Platforms
+  Amazon Web Services (AWS)
+  Google Cloud Platform (GCP)
+  Azure
+  Alibaba Cloud
+  Oracle Cloud
+  DigitalOcean
+  Vultr
+  VMware Cloud
+  IBM Cloud
+  Linode
+  OVHcloud
+  Scaleway
+  Stackpath
+
+Open Source Cloud Platforms
+  Openstack
+  OpenNebula
+  Apache CloudStack
+  ManageIQ
+  Eucalyptus
+  Apache Mesos
+  DC/OS
+  Localstack
+  AppScale
+
+Virtualization Platforms/Solutions	
+  oVirt
+  RedHat Virtualiztion
+  Proxmox VE
+  VMware vSphere
+  VMware ESXi
+  VMware Horizon
+  libvirt
+  Xen
+  KVM
+  QEMU
+  Citrix Hypervisor
+  IBM PowerVM
+  Microsoft Hyper-V
+
+Operating Systems
+  Linux
+    RHEL
+    SLES
+    CentOS
+    Rocky Linux
+    Debian
+    Ubuntu
+    Gentoo
+    CoreOS Container Linux
+    OSv
+    Atomic
+    Photon
+  Windows Server
+  macOS
+  Android
+  iOS
+  FreeBSD
+
+Distributed Filesystems
+  Ceph
+  GlusterFS
+  MinIO
+  Lustre
+  LINBIT
+  XtreemFS
+  MooseFS
+  Tahoe-LAFS
+
+Container Platforms
+  Kubernetes
+  Openshift
+  Podman
+  Docker
+  Docker Compose
+  Docker Swarm
+  Rancher
+  K3S
+  Dokku
+  LXC
+  OpenVz
+  Singularity
+  Kata Containers
+
+Automation & Orchestration
+  Terraform
+  Ansible
+  Puppet
+  Chef
+  Salt
+  Pulumi
+  CloudFormation
+  Packer
+  Vagrant
+  Nomad
+  Foreman
+  Capistrano
+  Rundeck
+  Stacktape
+  Selefra
+  OctoDNS
+  Mina
+  Fabric
+  StackStorm
+  Juju
+  Bosh
+  Cloudify
+  Tsuru
+  Marathon
+  Spacelift
+  Atlantis
+  KubeVela
+  Score
+  
+Continuous Integration & Continuous Delivery
+  On premises
+    Jenkins
+    Gitlab CI
+    Spinnaker
+    Argo
+    Tekton
+    Teamcity
+    Buildbot
+    Bamboo
+    Drone
+    Concourse
+    goCD
+    Zuul
+    Evergreen
+    werf
+    Flux
+    Flagger
+    PipeCD
+    Gitploy
+  Public Services
+    Github actions
+    Travis CI
+    Circle CI
+    Bitrise
+    Buildkite
+    Cirrus CI
+    Codefresh
+    Kraken CI
+    Earthly
+    
+Source Code Management
+  GitHub
+  Gitlab
+  Bitbucket
+  Mercurial
+  Subversion
+  Gitea
+  Gogs
+  Gitblit 
+
+Web Servers
+  Nginx
+  Apache
+  IIS
+  Lighttpd
+  Jetty
+  Apache Tomcat
+  WildFly
+  GlassFish
+  Caddy
+  Uwsgi
+  Cherokee
+  
+Programming Languages
+  Bash
+  Python
+  Ruby
+  Go
+  HCL
+  Perl
+  Lua
+  PHP
+  Java
+  Kotlin
+  JavaScript
+  Scala
+  Rust
+  C/C++/C#
+  PowerShell
+
+Build Tools
+  Maven
+  Gradle
+  Ant
+  Grunt
+  Rake
+  Premake
+  Cmake
+  Automake
+  Autoconf
+  Bundler
+  npm
+  yarn
+
+Databases
+  Relational (SQL)
+    PostgreSQL
+    MySQL
+    MariaDB
+    PostgreSQL
+    Oracle Database
+    IBM Db2
+    Firebird
+    SQLite
+  Non-relational (NoSQL)
+    Cassandra
+    Elasticsearch
+    MongoDB
+    Couchdb
+    ScyllaDB
+    Apache HBase
+    Bigtable
+    Rethinkdb
+    OrientDB
+    Neo4j
+    ArangoDB
+    Redis
+    Etcd
+    RocksDB
+    DynamoDB
+    Couchbase
+    Leveldb
+      
+Observability & Monitoring
+  Zabbix
+  Monit
+  Icinga
+  Datadog
+  Sentry
+  Steampipe
+  Sensu
+  Alerta
+  Naemon
+  Nagios
+  Glances
+  Healthchecks
+  cAdvisor
+  Co-Pilot
+  Keep
+  Globalping CLI
+  StatusPal
+  
+Metrics Collection
+  Prometheus
+  Grafana
+  Thundra Foresight
+  Collectd
+  Graphite
+  Influxdata
+  Netdata
+  
+Logs Management
+  Logstash
+  Fluentd
+  Kibana
+  Loki
+  Graylog
+  Flume  
+
+API Gateways
+  Envoy
+  Traefik
+  KrakenD
+  Apache APISIX
+  Kong
+  API Umbrella
+  Fusio
+  WSO2
+  Ambassador
+  Gloo Gateway
+  Tyk
+  Cilium
+  Gloo
+  Ocelot
+  Apigee
+
+Service Discovery & Service Mesh
+  Consul
+  Zookeeper
+  Istio
+  Serf
+  Linkerd
+  Nacos
+  Kuma
+
+Distributed Messaging Platforms
+  Rabbitmq
+  Kafka
+  Celery
+  Activemq
+  Beanstalkd
+  NSQ
+  Faktory
+  Nats
+  RestMQ
+  Dkron
+  KubeMQ
+  
+Secret Management
+  Vault
+  Infisical
+  Keywhiz
+  Keybase
+  Teller
+  SecretScanner
+  Sops
+  Git Secret
+
+Security Tools
+  Cloudflare
+  SonarQube
+  Trivy
+  Snyk
+  WhiteSource
+  OpenSCAP
+  OpenVAS
+  Nexus lifecycle
+  CloudSploit
+  Kube-bench
+  kubesec
+  Dependency-Track
+  Renovate
+  Checkov
+  Talisman
+
+VPN
+  OpenVPN
+  WireGuard
+  IPsec VPN
+  Pritunl
+  Algo
+  Sshuttle
+  SoftEther
+  Firezone
+  
+Chaos Engineering
+  Chaos Monkey
+  Comcast
+  Toxiproxy
+  Chaos Mesh
+  Pumba
+  Litmus
+  Chaos Toolkit  
+  Blockade
+
+Documentation Tools
+  MkDocs
+  Gitbook
+  Docusaurus
+  Docsify
+  Gollum
+  Docz
+  BookStack
+  Markdoc
+ 
