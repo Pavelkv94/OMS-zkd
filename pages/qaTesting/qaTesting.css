@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "ZzzFont";
+  src: url("../../assets/fonts/Zzz.woff"), url("../../assets/fonts/Zzz.ttf"), url("../../assets/fonts/Zzz.otf");
+}
+
+/* First Block */
+.testing-main {
+  background-color: #222222;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+#zakodixnet_canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.title {
+  font-family: "ZzzFont";
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 125%;
+  font-style: normal;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.title h1,
+.testing-descript h2,
+.contact-us h4 {
+  font-family: "ZzzFont";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 125%;
+  font-style: normal;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .title h1 {
+    font-size: 36px;
+    margin: 80px 0px;
+  }
+
+  .title h1:first-child {
+    max-width: 340px;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 340px;
+  }
+}
+
+/* Second Block */
+.testing-descript {
+  background: white;
+  width: 100%;
+  min-height: 840px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testing-descript section {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.testing-descript h2 {
+  font-size: 48px;
+  margin: 80px 0px 50px 0px;
+}
+
+.testing-descript p {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.testing-content {
+  width: 100%;
+  display: grid;
+  row-gap: 50px;
+  grid-template-columns: 477px 477px;
+  justify-content: space-between;
+}
+.testing-content-item h2 {
+  margin: 0;
+}
+.testing-content p,
+.testing-content li {
+  font-size: 24px;
+  line-height: 28px;
+  max-width: 477px;
+}
+.testing-content p {
+  text-align: justify;
+}
+.testing-content ul {
+  list-style-type: none;
+}
+.testing-item-descr {
+  display: flex;
+  align-items: center;
+}
+
+.testing-content ul li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.testing-content ul li:before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 5px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid black; /* Change the color if needed */
+}
+.testing-square {
+  width: 478px;
+  height: 478px;
+  font-size: 40px;
+  color: white;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testing-content ul {
+  padding: 0;
+}
+@media screen and (max-width: 1100px) {
+  .testing-content {
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .testing-square {
+    width: 200px;
+    height: 200px;
+  }
+  .testing-square h2 {
+    font-size: 24px;
+  }
+  .testing-content p,
+  .testing-content ul li {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400 !important;
+  }
+  .testing-content ul li:before {
+    top: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .testing-descript section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .testing-descript section {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .testing-square h2 {
+    margin: 0 !important;
+  }
+  .testing-content p,
+  .testing-content ul li {
+    line-height: 24px;
+  }
+  .testing-content ul li:before {
+    top: 8px;
+  }
+  .testing-content {
+    column-gap: 20px;
+  }
+  .testing-descript {
+    min-height: 400px;
+  }
+
+  .testing-descript h2 {
+    font-size: 24px;
+    margin: 50px 0px 30px 0px;
+  }
+
+  .testing-descript section:nth-child(2) h2 {
+    margin: 30px 0px 30px 0px;
+  }
+
+  .testing-descript section:nth-child(3) h2 {
+    margin: 50px 0px 30px 0px;
+  }
+
+  .testing-descript p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 470px) {
+  .testing-square h2 {
+    font-size: 14px;
+  }
+  .testing-square {
+    width: 130px;
+    height: 130px;
+  }
+  .testing-content p,
+  .testing-content ul li {
+    font-size: 14px !important;
+    line-height: 24px;
+  }
+}
