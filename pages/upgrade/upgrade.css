@@ -491,6 +491,25 @@
   background: white;
   padding-bottom: 60px;
 }
+
+.theSecond.theSecond {
+  padding-bottom: 0;
+}
+.theSecond.theSecond .approach3-item-title {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+.theSecond.theSecond p.approach3-item-title:first-child {
+  margin-top: 70px;
+} 
+.comaration {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+}
 .approach3 section {
   width: 1200px;
   display: flex;
