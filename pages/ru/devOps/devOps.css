@@ -1,0 +1,343 @@
+@font-face {
+  font-family: "TrainOne";
+  src: url("../../../assets/fonts/TrainOne-Regular.ttf") format("truetype");
+}
+/* First Block */
+.devops-main {
+  background-color: #222222;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+#zakodixnet_canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.title {
+  font-family: "TrainOne";
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 125%;
+  font-style: normal;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 560px;
+}
+.title h1,
+.devops-descript h2,
+.devops-service h2,
+.contact-us h4 {
+  font-family: "TrainOne";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 125%;
+  font-style: normal;
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+  .title h1 {
+    font-size: 36px;
+    margin: 80px 0px;
+  }
+  .title h1:first-child {
+    max-width: 320px;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 340px;
+  }
+}
+
+/* Second Block */
+.devops-descript {
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.devops-descript section,
+.devops-service section {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.devops-descript section:last-child {
+  margin-bottom: 80px;
+}
+.devops-descript h2,
+.devops-service h2 {
+  font-size: 48px;
+  margin: 80px 0px 50px 0px;
+}
+.devops-descript p {
+  font-size: 32px;
+  margin: 0px;
+}
+.processes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.processes p {
+  margin: 10px 0px;
+  max-width: 277px;
+}
+.processes p:first-child {
+  font-weight: 500;
+}
+.processes div div:first-child {
+  width: 277px;
+  height: 277px;
+  background: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.processes div div img {
+  width: 130px;
+  height: 130px;
+}
+.processes div div:nth-child(2) p:nth-child(2) {
+  font-size: 20px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.team p {
+  margin: 20px 0px;
+  font-weight: 500;
+}
+
+.devops-service {
+  background: #222222;
+  color: white;
+}
+.devops-service section {
+  margin: 0 auto;
+}
+.devops-service-descript {
+  width: 100%;
+  display: flex;
+  margin-bottom: 80px;
+  justify-content: space-around;
+  text-align: center;
+}
+.devops-service-descript p {
+  font-size: 36px;
+  margin: 0;
+}
+
+.devops-tools {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.devops-tools ul {
+  font-size: 20px;
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 40px;
+}
+
+.devops-tools ul li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+.devops-tools ul li:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid black; /* Change the color if needed */
+}
+
+.devops-tools ul li.devops-tools-subitem span {
+  font-weight: 500;
+}
+.devops-tools ul li.devops-tools-subitem:before {
+  transform: rotate(90deg);
+}
+
+.devops-tools div p {
+  font-size: 24px;
+  font-weight: 500;
+}
+.element-animation-opacity {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation-opacity.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+.devops-service-descript p {
+  cursor: default;
+  opacity: 0.1;
+}
+
+.select-one,
+.select-two {
+  transition: 0.7s;
+  cursor: default;
+}
+.select-one.active,
+.select-two.active {
+  opacity: 1;
+  transition: 0.7s;
+}
+@media screen and (max-width: 1220px) {
+  .devops-descript section,
+  .devops-service section {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 640px) {
+  div.team.slider {
+    display: none;
+  }
+  .team div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .devops-descript section {
+    width: 100%;
+  }
+  .devops-descript section:last-child {
+    margin-bottom: 50px;
+  }
+
+  .devops-descript h2,
+  .devops-service h2 {
+    font-size: 24px;
+    margin: 50px 0px 10px 0px;
+  }
+  .devops-descript section:nth-child(2) h2 {
+    margin: 30px 0px 30px 0px;
+  }
+  .devops-descript section:nth-child(3) h2 {
+    margin: 50px 0px 30px 0px;
+  }
+  .devops-descript p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .processes,
+  .devops-service section {
+    width: 90%;
+  }
+  .processes div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0px;
+  }
+  .processes p {
+    margin: 0px 0px 10px 0px;
+  }
+  .processes.all div div:first-child {
+    width: 200px;
+    height: 200px;
+  }
+  .processes div div:first-child {
+    width: 216px;
+  }
+  .processes div div:nth-child(2) {
+    width: 138px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  .processes div div:nth-child(2) p:nth-child(2) {
+    font-size: 16px;
+  }
+  div.team.desktop {
+    display: none;
+  }
+
+  /* Slider */
+  div.team.slider {
+    width: 70%;
+  }
+  div.team.slider .slick-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.team.slider .slick-slide p {
+    font-size: 24px;
+    margin: 30px 0px 10px 0px;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 40%;
+  }
+  .slick-dots {
+    font-size: 5px;
+  }
+  .slick-dots li {
+    margin: 0px;
+  }
+  .slick-dots li.slick-active button:before {
+    font-size: 10px;
+    top: 1px;
+  }
+  .devops-service-descript p {
+    font-size: 24px;
+  }
+  .devops-tools {
+    width: 90% !important;
+    justify-content: space-between !important;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+  .devops-tools p {
+    font-size: 18px !important;
+  }
+
+  .devops-tools ul li{
+    font-size: 16px;
+  }
+  .devops-tools p {
+    font-size: 18px;
+  }
+  .element-animation-opacity {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

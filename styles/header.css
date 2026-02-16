@@ -29,6 +29,33 @@ header:first-child section {
   align-items: center;
 }
 
+/* Language switcher (right side of header) */
+header:first-child .lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 16px;
+  font-size: 18px;
+  color: white;
+  white-space: nowrap;
+}
+header:first-child .lang-switcher a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+header:first-child .lang-switcher a:hover {
+  color: white;
+}
+header:first-child .lang-switcher a.active {
+  color: white;
+  font-weight: 600;
+  pointer-events: none;
+}
+header:first-child .lang-switcher .lang-sep {
+  color: rgba(255, 255, 255, 0.5);
+  user-select: none;
+}
+
 
 @media screen and (max-width: 1080px) {
   .logo-wrapper {
@@ -253,6 +280,61 @@ nav ul>.submenu-link:nth-child(2), nav ul>.submenu-link:nth-child(2) .submenu, n
   }
   header:nth-child(2) div img {
     margin: 7px 0;
+  }
+
+  /* Language switcher in mobile header bar */
+  header:nth-child(2) .lang-switcher-mobile {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 16px;
+    color: white;
+    margin-right: 8px;
+  }
+  header:nth-child(2) .lang-switcher-mobile a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+  }
+  header:nth-child(2) .lang-switcher-mobile a:hover {
+    color: white;
+  }
+  header:nth-child(2) .lang-switcher-mobile a.active {
+    color: white;
+    font-weight: 600;
+    pointer-events: none;
+  }
+  header:nth-child(2) .lang-switcher-mobile .lang-sep {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Language switcher inside slide-out menu */
+  .menu .lang-switcher-menu {
+    min-height: auto !important;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .menu .lang-switcher-menu .lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 18px;
+  }
+  .menu .lang-switcher-menu a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+  }
+  .menu .lang-switcher-menu a:hover {
+    color: white;
+  }
+  .menu .lang-switcher-menu a.active {
+    color: white;
+    font-weight: 600;
+    pointer-events: none;
+  }
+  .menu .lang-switcher-menu .lang-sep {
+    color: rgba(255, 255, 255, 0.5);
   }
 
   .menu-btn {

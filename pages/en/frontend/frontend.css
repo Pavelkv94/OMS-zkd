@@ -1,0 +1,414 @@
+@font-face {
+  font-family: "ZzzFont";
+  src: url("../../../assets/fonts/Zzz.woff"), url("../../../assets/fonts/Zzz.ttf"),
+    url("../../../assets/fonts/Zzz.otf");
+}
+
+/* First Block */
+.frontend-main {
+  background-color: #222222;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+#zakodixnet_canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.title {
+  font-family: "ZzzFont";
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 125%;
+  font-style: normal;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.title h1,
+.frontend-descript h2,
+.options h2,
+.contact-us h4 {
+  font-family: "ZzzFont";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 125%;
+  font-style: normal;
+  text-align: center;
+}
+.options h2 {
+  margin: 80px 0 50px 0;
+}
+@media screen and (max-width: 640px) {
+  .title h1 {
+    font-size: 36px;
+    margin: 80px 0px;
+  }
+
+  .title h1:first-child {
+    max-width: 320px;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 340px;
+  }
+}
+
+/* Second Block */
+.frontend-descript {
+  background: white;
+  width: 100%;
+  min-height: 840px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.frontend-descript section {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.frontend-descript h2 {
+  font-size: 48px;
+  margin: 80px 0px 50px 0px;
+}
+
+.frontend-descript p {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.logo-frontend {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.logo-frontend p {
+  margin: 20px 0px;
+  max-width: 377px;
+  text-align: center;
+}
+
+.logo-frontend div div:first-child {
+  width: 377px;
+  height: 377px;
+  background: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+}
+
+.logo-frontend div div:first-child h3 {
+  margin: 30px 0px 40px 0px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.6%;
+}
+
+.logo-frontend div div:nth-child(2) p:nth-child(2) {
+  font-size: 24px;
+}
+
+/* Mobile-logo-frontend */
+.mobile-logo-frontend {
+  width: 90%;
+}
+
+.mobile-logo-frontend-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px 0px;
+}
+
+.mobile-logo-frontend-item div:nth-child(2) {
+  width: 138px;
+  margin-left: 10px;
+}
+
+.mobile-logo-frontend p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 104.6%;
+}
+
+.mobile-logo-frontend h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125.6%;
+}
+
+.mobile-logo-frontend div div:first-child {
+  width: 200px;
+  height: 200px;
+  background: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.logo-frontend div div:first-child h3 {
+  margin: 30px 0px 40px 0px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.6%;
+}
+
+.logo-frontend div div:nth-child(2) p:nth-child(2) {
+  font-size: 24px;
+}
+
+/* Options */
+.options {
+  background: #222222;
+  width: 100%;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.options section {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.options h2 {
+  font-size: 48px;
+}
+
+.options-block-desktop {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.options-block-desktop .options-radial {
+  width: 280px;
+  height: 280px;
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 125.6%;
+  margin: 10px;
+}
+
+.options-block-mobile .options-radial {
+  width: 250px;
+  height: 250px;
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125.6%;
+  margin: 10px;
+}
+
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.technologies p {
+  margin: 20px 0px 0px;
+  font-weight: 500;
+}
+
+.technologies p:nth-child(2) {
+  font-size: 32px;
+}
+
+.technologies p:nth-child(3) {
+  font-weight: 400;
+  text-align: center;
+}
+
+.radial {
+  width: 250px;
+  height: 250px;
+  background-color: #222222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 640px) {
+
+  div.technologies.slider,
+  div.options-block-mobile {
+    display: none;
+  }
+
+  .technologies div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 377px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-logo-frontend {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+
+  .frontend-descript section,
+  .options section {
+    width: 90%;
+  }
+
+  .logo-frontend.all {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .frontend-descript section {
+    width: 100%;
+  }
+
+  .options {
+    min-height: 440px;
+  }
+
+  .frontend-descript h2,
+  .options section h2 {
+    max-width: 90%;
+    font-size: 24px;
+    margin: 50px 0px 30px 0px;
+  }
+
+  .options section h2 {
+    margin: 30px 0;
+    ;
+  }
+
+  .frontend-descript section {
+    margin-bottom: 50px;
+  }
+
+  .frontend-descript section:nth-child(2) h2 {
+    margin: 30px 0px 30px 0px;
+  }
+
+  .frontend-descript section:nth-child(3) h2 {
+    margin: 50px 0px 30px 0px;
+  }
+
+  .frontend-descript p:first-child {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .logo-frontend,
+  div.technologies.desktop,
+  div.options-block-desktop {
+    display: none;
+  }
+
+  /* Slider */
+  div.technologies.slider,
+  div.options-block-mobile.slider {
+    width: 70%;
+  }
+
+  div.technologies.slider .slick-slide,
+  div.options-block-mobile.slider .slick-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.technologies.slider .slick-slide p:last-child,
+  div.options-block-mobile.slider .slick-slide p {
+    font-size: 16px;
+    margin: 15px 0px 10px 0px;
+  }
+  .technologies p:nth-child(2) {
+    font-size: 24px;
+  }
+  div.options-block-mobile.slider .slick-dots li button:before {
+    color: white;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 30%;
+  }
+  .white-slick-prev,
+  .white-slick-next {
+    top: 50%;
+  }
+  .slick-dots {
+    font-size: 5px;
+  }
+
+  .slick-dots li {
+    margin: 0px;
+  }
+
+  .slick-dots li.slick-active button:before {
+    font-size: 10px;
+    top: 1px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .options-block-mobile .options-radial {
+    width: 230px;
+    height: 230px;
+  }
+}
