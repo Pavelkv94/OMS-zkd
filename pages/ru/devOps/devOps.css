@@ -23,6 +23,7 @@
 }
 .title {
   font-family: "TrainOne";
+  letter-spacing: -5px;
   font-weight: 500;
   font-size: 34px;
   line-height: 125%;
@@ -37,6 +38,7 @@
 .devops-service h2,
 .contact-us h4 {
   font-family: "TrainOne";
+  letter-spacing: -5px;
   font-weight: 500;
   font-size: 64px;
   line-height: 125%;

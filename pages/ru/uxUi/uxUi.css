@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'ZzzFont';
-  src: url('../../../assets/fonts/Zzz.woff'), url('../../../assets/fonts/Zzz.ttf'), url('../../../assets/fonts/Zzz.otf');
+  font-family: "TrainOne";
+  src: url("../../../assets/fonts/TrainOne-Regular.ttf") format("truetype");
 }
 
 /* First Block */
@@ -25,7 +25,8 @@
 }
 
 .title {
-  font-family: 'ZzzFont';
+  font-family: "TrainOne";
+  letter-spacing: -5px;
   font-weight: 500;
   font-size: 34px;
   line-height: 125%;
@@ -42,7 +43,8 @@
 .solutions h2,
 .python h2,
 .contact-us h4 {
-  font-family: 'ZzzFont';
+  font-family: "TrainOne";
+  letter-spacing: -5px;
   font-weight: 500;
   font-size: 64px;
   line-height: 125%;
@@ -387,7 +389,8 @@
 .contact-us h2 {
   font-size: 48px;
   margin: 50px 0 40px 0;
-  font-family: 'ZzzFont';
+  font-family: "TrainOne";
+  letter-spacing: -5px;
   font-weight: 500;
   line-height: 125%;
 }
